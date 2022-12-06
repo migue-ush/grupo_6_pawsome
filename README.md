@@ -13,7 +13,8 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 * https://www.purina-latam.com/ar/excellent
 * https://www.royalcanin.com/ar
 * https://www.natural-life.com.ar/
-    
+* https://www.purina-latam.com/ar/proplan 
+   
 ### Autores del proyecto
 
 + Andrés Bertolano: Tengo 37 años, vivo en Buenos Aires, Argentina. Trabajo en Administración de Empresas y actualmente estudio Programación Web Full Stack en Digital House. Me gusta mucho la música y el fútbol. Disfruto de los momentos recreativos al aire libre con familia y amigos.
@@ -22,7 +23,7 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 
 + Carolina Vicino: 25 años de edad, hasta hace menos de un año vivía en Buenos Aires, hasta que decidí mudarme a Montreal. Estudio Programación Web Full Stack, y me gustan los juegos en línea, aprender idiomas, entrenar y viajar.
 
-+ Boris ...
++ Boris Boujon: 22 años de edad, vivo en Buenos Aires, estudio programacion web full stack, trabajo en contabilidad, me gusta entrenar, viajar y conocer nuevos lugares.
 
 ### Wireframes y Tablero
 
@@ -30,9 +31,6 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 
 [Trello](https://trello.com/b/OiWUyjdB/sin-t%C3%ADtulo)
 
-Agrego un comentario de prueba. Solo para ver que pasa.
-
-Despues borro el comentario de prueba linea 33
 
 
 
