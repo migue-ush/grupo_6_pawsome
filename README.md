@@ -18,6 +18,12 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 
 + Andrés Bertolano: Tengo 37 años, vivo en Buenos Aires, Argentina. Trabajo en Administración de Eempresas y actualmente estudio Programación Web Full Stack en Digital House. Me gusta mucho la música y el fútbol. Disfruto de los momentos recreativos al aire libre con familia y amigos.
 
++ Miguel ...
+
++ Carolina ...
+
++ Boris ...
+
 ### Wireframes y Tablero
 
 [Wireframes](https://www.figma.com/files/team/1178466742781157019)
