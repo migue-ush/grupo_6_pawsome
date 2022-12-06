@@ -20,7 +20,7 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 
 + Miguel Angel Albornoz: 46 años de edad, nacido en Buenos Aires pero vivo en Ushuaia, Tierra del Fuego, Argentina desde los 6 años. Técnico en Electrónica, estudiante de Programación Web Full Stack en Digital House. Con mi familia nos gusta viajar y conecer nuevos lugares. 
 
-+ Carolina ...
++ Carolina Vicino: 25 años de edad, hasta hace menos de un año vivía en Buenos Aires, hasta que decidí mudarme a Montreal. Estudio Programación Web Full Stack, y me gustan los juegos en línea, aprender idiomas, entrenar y viajar.
 
 + Boris ...
 
