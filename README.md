@@ -16,9 +16,9 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
     
 ### Autores del proyecto
 
-+ Andrés Bertolano: Tengo 37 años, vivo en Buenos Aires, Argentina. Trabajo en Administración de Eempresas y actualmente estudio Programación Web Full Stack en Digital House. Me gusta mucho la música y el fútbol. Disfruto de los momentos recreativos al aire libre con familia y amigos.
++ Andrés Bertolano: Tengo 37 años, vivo en Buenos Aires, Argentina. Trabajo en Administración de Empresas y actualmente estudio Programación Web Full Stack en Digital House. Me gusta mucho la música y el fútbol. Disfruto de los momentos recreativos al aire libre con familia y amigos.
 
-+ Miguel ...
++ Miguel Angel Albornoz: 46 años de edad, nacido en Buenos Aires pero vivo en Ushuaia, Tierra del Fuego, Argentina desde los 6 años. Técnico en Electrónica, estudiante de Programación Web Full Stack en Digital House. Con mi familia nos gusta viajar y conecer nuevos lugares. 
 
 + Carolina ...
 
