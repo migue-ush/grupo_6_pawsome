@@ -29,7 +29,7 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 
 [Wireframes](https://www.figma.com/files/team/1178466742781157019)
 
-[Trello](https://trello.com/invite/b/uYLpL7TH/ATTIfe5e8d26f6e86870c741b2437466ba6107D3A092/grupo-6-pawsome)
+[Trello](https://trello.com/b/uYLpL7TH/grupo-6-pawsome)
 
 
 
