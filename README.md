@@ -14,6 +14,8 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 * https://www.royalcanin.com/ar
 * https://www.natural-life.com.ar/
 * https://www.purina-latam.com/ar/proplan 
+
++ La elección de estas páginas de referencia se debe a la temática de nuestro proyecto. Quisimos inspirarnos en páginas que tuvieran la misma oferta de productos y estén dirigidos al mismo target. 
    
 ### Autores del proyecto
 
