@@ -3,15 +3,33 @@ Familia: 'Roboto'
 Versiones: 300, 400, 700
 
 
-=== DETALLE DE PRODUCTOS === 
+=== DESCRIPCION DE PRODUCTOS === 
 
-Dentalife: Un producto dental de uso diario, que te da la seguridad que buscas para el cuidado oral de tu perro.
+Dentalife: 
+Un producto dental de uso diario, que te da la seguridad que buscas para el cuidado oral de tu perro.
 Limpia los dientes en áreas difíciles de alcanzar, llegando a la línea de la encía.
 
-Hueso: El Hueso Flotante de la Línea Water Action es un juguete antistress para divertirse en el agua con tus mascotas.
+Hueso: 
+El Hueso Flotante de la Línea Water Action es un juguete antistress para divertirse en el agua con tus mascotas.
 100% flotantes, resistente al agua y a la exposición del sol.
 
-Palitos de pollo: Palitos horneados con sabor a Pollo. El snack ideal para sacar a pasear a tu perro.
+Palitos de pollo: 
+Palitos horneados con sabor a Pollo. El snack ideal para sacar a pasear a tu perro.
 Producto libre de colorantes artificiales
+
+
+=== SECCIONES DEL SITIO ===
+
+1- perros
+a- Alimento balanceados
+b- Higiene
+c- Juguetes y snacks
+d- Antipulgas
+
+2- gatos
+a- Alimento balanceados
+b- Higiene
+c- Juguetes y snacks
+d- Antipulgas
 
 
