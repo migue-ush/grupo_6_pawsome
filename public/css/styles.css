@@ -54,6 +54,13 @@ header img {
     margin-bottom:15px;
 }
 
+.links a {
+    color:#fff;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .menu {
     padding:20px;
     height:60px;
@@ -193,3 +200,75 @@ h1 {
     text-align:left;
     width:30vw;
 }
+
+/* REGISTER.HTML */
+
+
+main h1 {
+    text-transform:uppercase;
+}
+
+main i {
+    font-size:18px;
+    color:#c17c74;
+    transform: rotate(-20deg);
+    margin-right:10px;
+}
+
+h2 {
+    font-family:'Roboto', sans-serif;
+    text-align:center;
+    font-size:13px;
+    color:#A4A4A4;
+    font-weight:lighter;
+}
+
+.registro {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.dato {
+    display: flex;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    width:80vw;
+    padding:7px;
+    margin-top:20px;
+    margin-bottom:25px;
+    font-size:12px;
+    background-color:#f6f6f6;
+    border:1px solid #eaeaea;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.aceptar {
+    font-size:13px;
+    color:#595959;
+    text-align:center;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.submit {
+    text-align:center;
+    width:100vw;
+}
+
+.enviar {
+    text-transform:uppercase;
+    background-color:#ddc9b4;
+    border-color:transparent;
+    color:#3E3C2B;
+    padding:8px;
+    margin-top:15px;
+    width:60vw;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
