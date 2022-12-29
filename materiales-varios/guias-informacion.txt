@@ -20,16 +20,16 @@ Producto libre de colorantes artificiales
 
 === SECCIONES DEL SITIO ===
 
-1- perros
-a- Alimento balanceados
-b- Higiene
-c- Juguetes y snacks
-d- Antipulgas
+1- PERROS
+    a- Alimento balanceados
+    b- Higiene
+    c- Juguetes y snacks
+    d- Antipulgas
 
-2- gatos
-a- Alimento balanceados
-b- Higiene
-c- Juguetes y snacks
-d- Antipulgas
+2- GATOS
+    a- Alimento balanceados
+    b- Higiene
+    c- Juguetes y snacks
+    d- Antipulgas
 
 
