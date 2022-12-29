@@ -17,7 +17,7 @@ header {
 }
 
 header img {
-    width: 300px;
+    width: 330px;
     display:block;
     margin-left:auto;
     margin-right:auto;
@@ -143,6 +143,7 @@ article {
     background-color:#f6f6f6;
     margin-left:auto;
     margin-right:auto;
+    border-top:10px solid #f6f6f6;
     margin-bottom:80px;
     border-radius:5px;
 }
@@ -181,4 +182,14 @@ h1 {
     margin-right:auto;
     color:#7a6c5d;
     padding-bottom:15px;
+}
+
+.precio {
+    font-size:17px;
+    color:#2a3d45;
+    font-weight:bold;
+    padding:10px;
+    margin-left:3px;
+    text-align:left;
+    width:30vw;
 }
