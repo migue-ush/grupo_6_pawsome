@@ -14,7 +14,6 @@ body {
 
 header {
     background-color:white;
-    border-bottom:10px solid #f6f6f6;
 }
 
 header img {
@@ -44,25 +43,79 @@ header img {
     bottom:45px;
 }
 
-.burger-menu {
-    background-color:#f6f6f6;
-    border:1px solid #eaeaea;
-    padding:10px;
-    border-radius:50%;
-    font-size:18px;
-    color:#c17c74;
-    width:39px;
-    height:39px;
+.links {
+    width:100%;
     display:flex;
-    position:absolute;
-    top:1%;
-    left:2%;
-
+    flex-direction:row;
+    flex-wrap: wrap;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:15px;
 }
 
+.menu {
+    padding:20px;
+    height:60px;
+    font-size:30px;
+    background-color:#7a6c5d;
+    color:#fff;
+    width:33.3vw;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+}
 
-.burger-menu i {
-    margin-top:-1px;
+.user {
+    padding:20px;
+    height:60px;
+    font-size:30px;
+    background-color:#2a3d45;
+    color:#fff;
+    width:33.3vw;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+}
+
+.cart {
+    padding:20px;
+    height:60px;
+    font-size:30px;
+    background-color:#c17c74;
+    color:#fff;
+    width:33.3vw;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.menu i {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size:20px;
+}
+
+.cart i {
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        font-size:20px;
+}
+
+.user i {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size:20px;
 }
 
 .icon {
@@ -80,3 +133,52 @@ header img {
 
 /* MAIN */
 
+section {
+    width:100%;
+}
+
+article {
+    width:85vw;
+    height:auto;
+    background-color:#f6f6f6;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:80px;
+    border-radius:5px;
+}
+
+.producto {
+    width:75vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+}
+
+.linea {
+    border:1px solid #eaeaea;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family:'Roboto', sans-serif;
+    font-size:20px;
+    padding:15px;
+    color:#7a6c5d;
+    font-weight:bolder;
+    text-align:center;
+}
+
+.desc {
+    font-size:13px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    color:#7a6c5d;
+    padding-bottom:15px;
+}
