@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Pawsome</title>
+</head>
+<body>
+    <header>
+        <section class="links">
+            <div class="menu">
+                <i class="fas fa-light fa-bars"></i>
+            </div>
+            <div class="user">
+                <a href="/login"><i class="fas fa-solid fa-user"></i></a>
+            </div>
+            <div class="cart">
+                <a href="/productCart"><i class="fas fa-solid fa-cart-plus"></i></a>
+            </div>
+            </section>  
+        <img src="/img/pawsome.png" width="330">
+        <form class="searchbar">
+            <input type="search" id="search" class="box" placeholder="Buscar un producto o artículos">
+            <button type="submit" class="icon"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <main>
+        <h1><i class="fas fa-solid fa-paw"></i> Registrese aquí</h1>
+        <h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>
+        <div class="registro">
+        <form class="formulario" method="POST">
+            <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" require>
+            <input type="password" class="dato" name="contrasenia" id="contrasenia" placeholder="CONTRASEÑA *" require>
+        <div class="aceptar">
+            <input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox">
+            <label for="acepto">Olvidé mi contraseña.</label>
+        </div>
+        <div class="submit">
+            <button type="submit" class="enviar" id="button">Enviar</button>
+        </div>
+        <h2>¿Todavía no sos parte? Registrate <a href="/register">AQUÍ</a></h2>
+        </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

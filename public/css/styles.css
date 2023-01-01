@@ -221,6 +221,14 @@ h2 {
     font-size:13px;
     color:#A4A4A4;
     font-weight:lighter;
+    width:98vw;
+}
+
+h2 a {
+    text-transform:none;
+    color:#c17c74;
+    font-weight:bold;
+    font-style:none;
 }
 
 .registro {
