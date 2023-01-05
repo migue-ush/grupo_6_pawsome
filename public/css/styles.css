@@ -16,6 +16,10 @@ header {
     background-color:white;
 }
 
+header nav {
+    display:none;
+}
+
 header img {
     width: 330px;
     display:block;
@@ -140,6 +144,30 @@ header img {
 
 /* MAIN */
 
+.titulo {
+    font-family:'Roboto', sans-serif;
+    font-size:20px;
+    text-align:center;
+    padding:10px;
+    margin-bottom:7px;
+    color:#2a3d45;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+article h2 {
+    font-family:'Roboto', sans-serif;
+    font-size:20px;
+    text-transform:uppercase;
+    padding:15px;
+    color:#7a6c5d;
+    font-weight:bolder;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}
+
 section {
     width:100%;
 }
@@ -169,6 +197,16 @@ article {
     width:100%;
     display:flex;
     flex-wrap: wrap;
+}
+
+h1 {
+    font-family:'Roboto', sans-serif;
+    font-size:20px;
+    text-transform:uppercase;
+    padding:15px;
+    color:#7a6c5d;
+    font-weight:bolder;
+    text-align:center;
 }
 
 h2 {
@@ -285,12 +323,18 @@ main div.shopping-basket {
     font-size: 28px;
     color: darkgray;
     margin-right: 10px;
-    border: 2px dotted red;
 }
 .contenedor-descuentos {
     background: #bcac9b;
     font-size: 18px;
     text-align: center;
+}
+
+main div.shopping-basket h1 i {
+    font-size:18px;
+    color:#7a6c5d;
+    transform: rotate(0deg);
+    margin-right:10px;
 }
 
 /* FOOTER */
