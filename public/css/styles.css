@@ -392,3 +392,23 @@ p {
     flex-direction: row-reverse;
     margin-top:-12px;
 }
+
+@media (min-width:768px){
+    .searchbar {
+        width:80vw;
+        margin: auto;
+    }
+
+    header nav {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        }
+
+    .nav-bar{
+        background: #bcac9b;
+    }
+
+}

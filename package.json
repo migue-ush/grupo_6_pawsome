@@ -2,5 +2,24 @@
   "dependencies": {
     "express": "^4.18.2",
     "nodemon": "^2.0.20"
-  }
+  },
+  "name": "grupo_6_pawsome",
+  "description": "Proyecto de E-Commerce dedicado a la venta online de productos para perros y gatos. Alimentos balanceados y todo tipo de artículos destinados al cuidado de mascotas.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carovicino/grupo_6_pawsome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carovicino/grupo_6_pawsome/issues"
+  },
+  "homepage": "https://github.com/carovicino/grupo_6_pawsome#readme"
 }
