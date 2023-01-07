@@ -7,9 +7,8 @@
   "description": "Proyecto de E-Commerce dedicado a la venta online de productos para perros y gatos. Alimentos balanceados y todo tipo de artículos destinados al cuidado de mascotas.",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./app.js"
   },
   "repository": {
     "type": "git",
