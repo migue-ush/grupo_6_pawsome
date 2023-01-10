@@ -207,7 +207,7 @@ article {
 }
 
 .linea {
-    border:1px solid #eaeaea;
+    border-bottom:1px solid #eaeaea;
     width:100%;
     display:flex;
     flex-wrap: wrap;
@@ -407,10 +407,16 @@ p {
     margin-top:-12px;
 }
 
-@media (min-width:768px){
+/* TABLET */
+
+@media (min-width:361px){
     .searchbar {
         width:80vw;
         margin: auto;
+    }
+
+    .titulo {
+        display:none;
     }
 
     header nav {
@@ -423,6 +429,37 @@ p {
 
     .nav-bar{
         background: #bcac9b;
+    }
+
+    main section {
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        margin-top:20px;
+    }
+
+    main section article {
+        width:45vw;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        max-width:280px;
+    }
+
+    main section article img {
+        margin-top:15px;
+        max-width:250px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* DESKTOP */
+
+@media (min-width:768px){
+    header img {
+        max-width:350px;
     }
 
 }
