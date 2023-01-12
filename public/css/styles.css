@@ -409,7 +409,7 @@ p {
 
 /* TABLET */
 
-@media (min-width:361px){
+@media (min-width: 420px){
     .searchbar {
         width:80vw;
         margin: auto;
