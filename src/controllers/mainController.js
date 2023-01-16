@@ -3,17 +3,16 @@ const controller =  {
         res.render('index', {})
     },
     register: (req, res) => {
-        // let plato = listaPlatos.find(row => row.id == req.params.id)
-        res.render('register', {})
+        res.render('register')
     },
     login: (req, res) => {
-        res.render('login', {})
+        res.render('login')
     },
     cart: (req, res) => {
-        res.render('productCart', {})
+        res.render('productCart')
     },
     detail: (req, res) => {
-        res.render('productDetail', {})
+        res.render('productDetail')
     },
 }
 
