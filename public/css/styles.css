@@ -386,6 +386,8 @@ p {
     font-size:12px;
     text-align:center;
     margin-top:10px;
+    max-width:80vw;
+    margin-left:5px;
 }
 
 .link {
@@ -462,4 +464,18 @@ p {
         max-width:350px;
     }
 
+    main section article {
+        width:30vw;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        max-width:280px;
+    }
+
+    main section article img {
+        margin-top:15px;
+        max-width:220px;
+        display:flex;
+        flex-wrap: wrap;
+    }
 }

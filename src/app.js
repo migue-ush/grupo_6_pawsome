@@ -14,6 +14,7 @@ app.use('/', mainRoutes)
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
 });
+
 // app.get('/', (req, res) => {
 //     res.render('index')
 // });
