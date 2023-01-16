@@ -1,32 +1,7 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Pawsome</title>
-</head>
+<%- include('partials/head.ejs') %>
 <body>
-    <header>
-        <section class="links">
-            <div class="menu">
-                <i class="fas fa-light fa-bars"></i>
-            </div>
-            <div class="user">
-                <a href="/login"><i class="fas fa-solid fa-user"></i></a>
-            </div>
-            <div class="cart">
-                <a href="/productCart"><i class="fas fa-solid fa-cart-plus"></i></a>
-            </div>
-            </section>  
-        <a href="/"><img src="/img/pawsome.png" width="330"></a>
-        <form class="searchbar">
-            <input type="search" id="search" class="box" placeholder="Buscar un producto o artículos">
-            <button type="submit" class="icon"><i class="fas fa-search"></i></button>
-        </form>
-    </header>
+    <%- include('partials/header.ejs') %>
     <main>
         <h1><i class="fas fa-solid fa-paw"></i> Registrese aquí</h1>
         <h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>
@@ -45,20 +20,6 @@
         </form>
         </div>
     </main>
-    <footer>
-        <section class="iconos">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-        </section>
-        <section>
-            <div class="link">Contactanos <i class="fas fa-angle-down"></i></div>
-            <div class="link">Sobre Nosotros <i class="fas fa-angle-down"></i></div>
-            <div class="link">Medios de pago <i class="fas fa-angle-down"></i></div>
-        </section>
-        <section>
-           <p>© Pawsome 2023. Todos los derechos reservados</p>
-        </section>
-    </footer>
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>
