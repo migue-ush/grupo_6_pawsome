@@ -43,6 +43,7 @@ header img {
     margin-top:-25px;
 }
 
+
 .searchbar {
     width:100%;
 }
@@ -477,5 +478,20 @@ p {
         max-width:220px;
         display:flex;
         flex-wrap: wrap;
+    }
+
+    .menu,
+    .user,
+    .cart {
+        width:33vw;
+        top:100%;
+    }
+
+    .box {
+        width:45vw;
+    }
+
+    .icon {
+        left:345px;
     }
 }
