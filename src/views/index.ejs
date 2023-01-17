@@ -1,7 +1,37 @@
 <html lang="en">
 <%- include('partials/head.ejs') %>
 <body>
-    <%- include('partials/header.ejs') %>
+    <header>
+        <section class="links">
+            <div class="menu">
+                <i class="fas fa-light fa-bars"></i>
+            </div>
+            <div class="user">
+                <a href="/login"><i class="fas fa-solid fa-user"></i></a>
+            </div>
+            <div class="cart">
+                <a href="/productCart"><i class="fas fa-solid fa-cart-plus"></i></a>
+            </div>
+        </section>  
+        <a href="/"><img src="/img/pawsome.png" width="330"></a>
+        <form class="searchbar">
+            <input type="search" id="search" class="box" placeholder="Buscar un producto o artículos">
+            <button type="submit" class="icon"><i class="fas fa-search"></i></button>
+        </form>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Más buscados</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta</a></li>
+                <li><a href="/login">Ingresá</a></li>
+                <li><a href="/productCart">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+   
     <main>
         <section>
             <div class="titulo">Ofertas</div>
