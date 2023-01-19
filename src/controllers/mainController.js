@@ -18,6 +18,10 @@ const controller =  {
     list: (req, res) => {
         res.render('productList')
     },
+
+    about: (req, res) => {
+        res.render('about')
+    }
 }
 
 module.exports = controller

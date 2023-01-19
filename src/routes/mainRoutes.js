@@ -15,4 +15,8 @@ router.get('/productDetail', mainController.detail)
 
 router.get('/productList', mainController.list)
 
+router.get('/about', mainController.about)
+
+
+
 module.exports = router
