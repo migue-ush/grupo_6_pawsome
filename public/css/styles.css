@@ -234,6 +234,15 @@ h2 {
     text-align:center;
 }
 
+h4 {
+    margin:auto;
+    text-align:center;
+    font-size:12px;
+    color:#7a6c5d;
+    font-weight: 100;
+    width:60vw;
+}
+
 .desc {
     font-size:13px;
     font-family:'Roboto', sans-serif;
@@ -253,6 +262,18 @@ h2 {
     margin-left:3px;
     text-align:left;
     width:30vw;
+}
+
+.aboutus-image {
+    margin-top:10px;
+    display:flex;
+    justify-content: center;
+}
+
+.aboutus-image img {
+    width:70vw;
+    max-width:500px;
+    border-radius:5px;
 }
 
 /* REGISTER.HTML */
@@ -415,9 +436,20 @@ p {
     margin-top:-12px;
 }
 
+.copyright {
+    margin:auto;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    width:100%;
+    padding:10px;
+}
+
 /* TABLET */
 
 @media (min-width: 420px){
+
+
     .searchbar {
         width:80vw;
         margin: auto;
@@ -456,7 +488,7 @@ p {
 
     main section article img {
         margin-top:15px;
-        max-width:250px;
+        max-width:180px;
         display:flex;
         flex-wrap: wrap;
     }
@@ -497,6 +529,16 @@ p {
     }
 
     .icon {
-        left:345px;
+        background-color:transparent;
+        display:flex;
+        flex-wrap:wrap;
+        margin-left:20%;
     }
+
+    .icon i {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: left;
+    }
+
 }
