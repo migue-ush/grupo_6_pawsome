@@ -147,7 +147,7 @@ header img {
 .icon {
     background-color:#f6f6f6;
     padding:6px;
-    width: 5px;
+    width:5vw;
     border:transparent;
     display: flex;
     flex-wrap: wrap;
@@ -399,6 +399,11 @@ p {
     font-size:13px;
     border-bottom:1px solid #eaeaea;
     text-transform: uppercase;
+}
+
+.link a {
+    color:#595959;
+    text-decoration: none;
 }
 
 .link i {
