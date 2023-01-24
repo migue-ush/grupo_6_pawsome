@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<%- include('partials/head.ejs') %>
-<body>
-    <%- include('partials/header.ejs') %>
+  <%- include('partials/head.ejs') %>
+  <body>
+  <%- include('partials/header.ejs') %>
     <main>
         <div class="shopping-basket">
-            <h1><i class="fas fa-shopping-basket"></i>Carrito de compras</h1>
+          <h1><i class="fas fa-shopping-basket"></i>Carrito de compras</h1>
         </div>
         <div>
-            <section>
-                <article>
-                    <img class="producto" src="/img/dentalife-perro-purina.png" with="250">
-                    <p>Dentalife:</p>
-                    <p> Galletitas Dentalife Perro Raza Pequeña.
-                    </p>
-                    <p class="precio">$450</p>
-                </article>
-                <article>
-                    <img class="producto" src="/img/hueso.png" width="250">
-                    <div class="linea"></div>
-                    <h2>Hueso</h2>
-                    <p class="desc">El Hueso Flotante de la Línea Water Action</p>
-                    <p class="precio">$1.450</p>
-                </article>
-            </section>
+          <section>
+            <article>
+              <img class="producto" src="/img/dentalife-perro-purina.png" with="250">
+                <p>Dentalife:</p>
+                <p> Galletitas Dentalife Perro Raza Pequeña.
+                </p>
+                <p class="precio">$450</p>
+            </article>
+            <article>
+              <img class="producto" src="/img/hueso.png" width="250">
+                <div class="linea"></div>
+                <h2>Hueso</h2>
+                <p class="desc">El Hueso Flotante de la Línea Water Action</p>
+                <p class="precio">$1.450</p>
+            </article>
+          </section>
         </div>
+
         <div class="contenedor-descuentos">
-            <p>Cupón / Descuento</p>
+          <!-- TO DO: arreglar y dar estilo a este div-->
+            <h3>Cupón / Descuento</h3>
         </div>
         <div class="submit">
             <button type="submit" class="enviar" id="button">Finalizar tu compra</button>
         </div>
     </main>
-    <%- include('partials/footer.ejs') %>
-</body>
+  <%- include('partials/footer.ejs') %>
+  </body>
 </html>
