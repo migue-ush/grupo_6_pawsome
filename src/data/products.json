@@ -32,7 +32,7 @@
         "price": 2600
     },
     {
-        "id": 4,
+        "id": 5,
         "nombre": "Palitos de Pollo",
         "descripcion": "Palitos horneados con sabor a pollo. El snack ideal para sacar a pasear a tu perro. Producto libre de colorantes artificiales.",
         "imagen": "image",
@@ -40,7 +40,7 @@
         "price": 1200
     },
     {
-        "id": 5,
+        "id": 6,
         "nombre": "Huesos",
         "descripcion": "El Hueso Flotante de la Línea Water Action es un juguete antistress para divertirse en el agua con tus mascotas. 100% flotantes, resistente al agua y a la exposición del sol.",
         "imagen": "image",
@@ -48,7 +48,7 @@
         "price": 1450
     },
     {
-        "id": 6,
+        "id": 7,
         "nombre": "Osspret Pack Shampoo Para Cachorros",
         "descripcion": "Higiene en general de cachorros y animales de piel delicada. Para ser usado en caninos y felinos.",
         "imagen": "image",
@@ -56,7 +56,7 @@
         "price": 1100
     },
     {
-        "id": 7,
+        "id": 8,
         "nombre": "Frontline Spray",
         "descripcion": "Actúa con velocidad en las primeras 4 horas tras la aplicación matando pulgas, garrapatas y piojos. FRONTLINE®Spray se puede aplicar en cachorros de gatos y perros a partir de los 2 días de vida.",
         "imagen": "image",
@@ -64,7 +64,7 @@
         "price": 1300
     },
     {
-        "id": 8,
+        "id": 9,
         "nombre": "Nexgard Comprimidos",
         "descripcion": "Nexgard es una tableta masticable con sabor a carne y puede administrarse con y sin comida. Protege al perro frente a pulgas y garrapatas. ",
         "imagen": "image",
@@ -72,7 +72,7 @@
         "price": 1240
     },
     {
-        "id": 9,
+        "id": 10,
         "nombre": "Royal Canin Hypoallergenic",
         "descripcion": "Formulado específicamente para ayudar a perros adultos con intolerancias y alergias alimentarias o sensibilidades dermatológicas.",
         "imagen": "image",
