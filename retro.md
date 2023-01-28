@@ -27,5 +27,5 @@ y horario para juntarnos y discutir cada Sprint.
 
 + Less of: Desaprovechar el tiempo en detalles que pueden ser resueltos más adelante, y de esta manera concentrarnos en las entregas obligatorias de cada Sprint.
 
-+ Stop Doing: Nuevamente llegamos al Sprint con varias dudas e incertidumbres de como lograr algunas de las tareas que forman parte de las entregas obligatorias. Estas dudas pueden ser
++ Stop Doing: Llegamos al Sprint con varias dudas e incertidumbres de como lograr algunas de las tareas que forman parte de las entregas obligatorias. Estas dudas pueden ser
 aclaradas con alguno de los docentes, pero al llegar con el tiempo justo a la fecha de entrega del Sprint, ya nos ha pasado que dejamos alguna tarea para completarla más adelante, y de esta forma nos vamos atrasando. 
