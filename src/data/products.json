@@ -4,7 +4,7 @@
         "nombre": "Purina Pro Plan Sterilized",
         "descripcion": "Alimento completo y balanceado para gatos adultos castrados o esterilizados. La esterilización y/o castración conduce a cambios que pueden predisponer a un aumento de peso.  OptiRenal ayuda a mantener el estado corporal óptimo",
         "imagen": "image",
-        "categoria": "gatos",
+        "categoria": 2,
         "price": 1450
     },
     {
@@ -12,7 +12,7 @@
         "nombre": "Purina Pro Plan",
         "descripcion": "Alimento completo y balanceado para gatos adultos de todas las razas. Es una tecnología exclusiva, con una combinación de prebióticos y antioxidantes naturales, que ayudan a optimizar la digestión y a mantener fuertes las defensas naturales de tu gato, protegiendo su sistema inmunológico contra las amenazas externas.",
         "imagen": "image",
-        "categoria": "gatos",
+        "categoria": 2,
         "price": 2100
     },
     {
@@ -20,7 +20,7 @@
         "nombre": "Purina Pro Plan Puppy",
         "descripcion": "Protección durante su primer año de vida. Formulado con carne fresca de pollo como ingrediente principal, además de vitaminas y minerales esenciales, PRO PLAN® Puppy Razas Medianas ofrece una óptima nutrición para cachorros en crecimiento.",
         "imagen": "image",
-        "categoria": "perros",
+        "categoria": 1,
         "price": 2450
     },
     {
@@ -28,7 +28,7 @@
         "nombre": "Purina Pro Plan Adulto",
         "descripcion": "Provee nutrición de avanzada que ayuda a los perros de razas medianas de 1 a 7 años de edad a mantenerse fuertes y llenos de vitalidad.",
         "imagen": "image",
-        "categoria": "perros",
+        "categoria": 1,
         "price": 2600
     },
     {
@@ -36,7 +36,7 @@
         "nombre": "Palitos de Pollo",
         "descripcion": "Palitos horneados con sabor a pollo. El snack ideal para sacar a pasear a tu perro. Producto libre de colorantes artificiales.",
         "imagen": "image",
-        "categoria": "perros",
+        "categoria": 1,
         "price": 1200
     },
     {
@@ -44,7 +44,7 @@
         "nombre": "Huesos",
         "descripcion": "El Hueso Flotante de la Línea Water Action es un juguete antistress para divertirse en el agua con tus mascotas. 100% flotantes, resistente al agua y a la exposición del sol.",
         "imagen": "image",
-        "categoria": "perros",
+        "categoria": 1,
         "price": 1450
     },
     {
@@ -52,7 +52,7 @@
         "nombre": "Osspret Pack Shampoo Para Cachorros",
         "descripcion": "Higiene en general de cachorros y animales de piel delicada. Para ser usado en caninos y felinos.",
         "imagen": "image",
-        "categoria": "ambos",
+        "categoria": 3,
         "price": 1100
     },
     {
@@ -60,7 +60,7 @@
         "nombre": "Frontline Spray",
         "descripcion": "Actúa con velocidad en las primeras 4 horas tras la aplicación matando pulgas, garrapatas y piojos. FRONTLINE®Spray se puede aplicar en cachorros de gatos y perros a partir de los 2 días de vida.",
         "imagen": "image",
-        "categoria": "ambos",
+        "categoria": 3,
         "price": 1300
     },
     {
@@ -68,7 +68,7 @@
         "nombre": "Nexgard Comprimidos",
         "descripcion": "Nexgard es una tableta masticable con sabor a carne y puede administrarse con y sin comida. Protege al perro frente a pulgas y garrapatas. ",
         "imagen": "image",
-        "categoria": "perros",
+        "categoria": 1,
         "price": 1240
     },
     {
@@ -76,7 +76,7 @@
         "nombre": "Royal Canin Hypoallergenic",
         "descripcion": "Formulado específicamente para ayudar a perros adultos con intolerancias y alergias alimentarias o sensibilidades dermatológicas.",
         "imagen": "image",
-        "categoria": "perros",
+        "categoria": 1,
         "price": 1390
     }
 ]

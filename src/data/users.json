@@ -1,0 +1,11 @@
+[ 
+    {
+        "id": 1,
+        "firstName": "nombre",
+        "lastName": "apellido",
+        "email": "email",
+        "contraseña": "password",
+        "categoria": "category",
+        "imagen": "image"
+    }
+]
