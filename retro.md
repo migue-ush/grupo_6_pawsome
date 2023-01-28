@@ -15,3 +15,17 @@
 
 + Stop Doing: Quedarnos con dudas e incertidumbres a lo largo del Sprint sin hacer la consulta oportuna entre nosotros o bien con los docentes, creyendo que en algún momento se nos va a aclarar u ocurrir una solución. Ganar tiempo haciendo la consulta inmediatamente sin miedo a molestar, sería mucho más práctico en los próximos Sprints.
 
+### Conclusiones del Tercer Sprint 
+
++ Start Doing: Trabajar más seguido en el proyecto, llegar con más tiempo a la fecha de entrega para poder tener unos días de descanso entre Sprints. 
+
++ More of: Tener una evolución del trabajo más constante, sin dejar de pasar mucho tiempo entre una tarea y la otra, para poder llegar en tiempo y forma para la fecha de entrega de cada
+Sprint. De esta forma podríamos llegar a darnos un tiempo de descanso entre sprint y otro, como recomendaron en la clase que sería lo mejor para nosotros, que en este momento no estaría pasando. 
+
++ Keep Doing : Priorizar las tareas del Sprint que son obligatorias, dejando las opcionales para el final si es que nos da el tiempo de completarlas. Organizarnos como grupo en un día
+y horario para juntarnos y discutir cada Sprint.
+
++ Less of: Desaprovechar el tiempo en detalles que pueden ser resueltos más adelante, y de esta manera concentrarnos en las entregas obligatorias de cada Sprint.
+
++ Stop Doing: Nuevamente llegamos al Sprint con varias dudas e incertidumbres de como lograr algunas de las tareas que forman parte de las entregas obligatorias. Estas dudas pueden ser
+aclaradas con alguno de los docentes, pero al llegar con el tiempo justo a la fecha de entrega del Sprint, ya nos ha pasado que dejamos alguna tarea para completarla más adelante, y de esta forma nos vamos atrasando. 
