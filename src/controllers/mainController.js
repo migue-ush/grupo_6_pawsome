@@ -15,13 +15,13 @@ const controller =  {
         res.render('productCart')
     },
 
-    detail: (req, res) => {
-        res.render('productDetail')
-    },
+    // detail: (req, res) => {
+        // res.render('productDetail')
+    // },
 
-    list: (req, res) => {
-        res.render('productList')
-    },
+    // list: (req, res) => {
+        // res.render('productList')
+    // },
 
     about: (req, res) => {
         res.render('about')
