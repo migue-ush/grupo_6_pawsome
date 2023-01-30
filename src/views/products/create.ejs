@@ -17,19 +17,19 @@
     <form action="/products/create" method="POST">
         <fieldset>
             <label for="product-name">Nombre del producto</label>
-            <input name="nombre" type="text" id="product-name">
+            <input class="dato" name="nombre" type="text" id="product-name">
         </fieldset>
         <fieldset>
             <label for="product-description">Descripcion del producto</label>
-            <input name="descripcion" type="text" id="product-description">
+            <input class="dato" name="descripcion" type="text" id="product-description">
         </fieldset>
         <fieldset>
             <label for="product-image">Imagen del producto</label>
-            <input name="imagen" type="image" id="product-image">
+            <input class="dato" name="imagen" type="image" id="product-image">
         </fieldset>
         <fieldset>
             <label for="product-category">Categoría del producto</label>
-            <select name="categoria" id="product-category">
+            <select class="dato" name="categoria" id="product-category">
                 <option value="1">Perros</option>
                 <option value="2">Gatos</option>
                 <option value="3">Ambos</option>
@@ -37,7 +37,7 @@
         </fieldset>
         <fieldset>
             <label for="product-price">Precio del producto</label>
-            <input name="precio" type="number" id="product-price">
+            <input class="dato" name="precio" type="number" id="product-price">
         </fieldset>
         <button type="submit">CREAR</button>
     </form>
