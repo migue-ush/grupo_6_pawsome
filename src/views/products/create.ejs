@@ -14,33 +14,35 @@
 <%- include('../partials/header.ejs') %>
 <main>
     <h2>Creación de productos</h2>
+    <div class="create-form">
     <form action="/products/create" method="POST">
         <fieldset>
-            <label for="product-name">Nombre del producto</label>
-            <input class="dato" name="nombre" type="text" id="product-name">
+            <label for="product-name" class="label-style">Nombre del producto</label>
+            <input class="create-form-input" name="nombre" type="text" id="product-name">
         </fieldset>
         <fieldset>
-            <label for="product-description">Descripcion del producto</label>
-            <input class="dato" name="descripcion" type="text" id="product-description">
+            <label for="product-description" class="label-style">Descripcion del producto</label>
+            <input class="create-form-input" name="descripcion" type="text" id="product-description">
         </fieldset>
         <fieldset>
-            <label for="product-image">Imagen del producto</label>
-            <input class="dato" name="imagen" type="image" id="product-image">
+            <label for="product-image" class="label-style">Imagen del producto</label>
+            <input class="create-form-input" name="imagen" type="image" id="product-image">
         </fieldset>
         <fieldset>
-            <label for="product-category">Categoría del producto</label>
-            <select class="dato" name="categoria" id="product-category">
+            <label for="product-category" class="label-style">Categoría del producto</label>
+            <select class="create-form-input" name="categoria" id="product-category">
                 <option value="1">Perros</option>
                 <option value="2">Gatos</option>
                 <option value="3">Ambos</option>
             </select>
         </fieldset>
         <fieldset>
-            <label for="product-price">Precio del producto</label>
-            <input class="dato" name="precio" type="number" id="product-price">
+            <label for="product-price" class="label-style">Precio del producto</label>
+            <input class="create-form-input" name="precio" type="number" id="product-price">
         </fieldset>
-        <button type="submit">CREAR</button>
+        <button type="submit" class="create-button">CREAR</button>
     </form>
+</div>
 </main>
 <%- include('../partials/footer.ejs') %>
 </body>

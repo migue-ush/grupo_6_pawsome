@@ -14,12 +14,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 const mainRoutes = require('./routes/mainRoutes');
-app.use('/', mainRoutes);
+app.use('/', mainRoutes)
 
 const productRoutes = require('./routes/productRoutes');
-app.use("/products",productRoutes);
-
-
+app.use('/products', productRoutes)
 
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
