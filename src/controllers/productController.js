@@ -16,9 +16,9 @@ const controller = {
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products')
     },
-    list: (req, res) => {
-        return res.render("/productList", {products: products});
-    },
+    // list: (req, res) => {
+        // return res.render("/productList", {products: products});
+    // },
         
     display: (req, res) => {
         let product = products.find(row => row.id == req.params.id)
