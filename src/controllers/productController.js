@@ -21,8 +21,8 @@ const controller = {
     },
         
     display: (req, res) => {
-        let product = products.find(row => row.id == req.params.id)
-        if (product) return res.render("products/producDtetail", {product: product});
+        let product = products.find(row => row.id == req.params.id);
+        if (product) return res.render("products/producDetail", {product: product});
         else return res.send("Producto no encontrado");
     },
 

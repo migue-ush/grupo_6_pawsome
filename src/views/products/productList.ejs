@@ -14,20 +14,21 @@
     <%- include('../partials/header.ejs') %>
     <main>
         <h1>Listado de productos</h1>
-        <h2>Este es es el listado de productos del proyecto de CRUD</h2>
+        <h2>Nuestros Productos</h2>
         <ul id="products-list">
             <% for(let i=0; i<products.length; i++) {%>
                 <li class="product-container">
-                    <a href="/products/detail/<%= products[i].id %>">
-                        <p class="product-title"><%= products[i].nombre %> </p>
-                        <h4 class="product-price"><%= products[i].precio %></h4>
-                        <h6 class="product-category"><%= products[i].categoria %></h6>
+                    <a href="/products/productDetail/<%= products[i].id %>">
+                        <img class="producto-img" src=" " alt="imagen del producto">
+                        <h2 class="titulo-a"><%= products[i].nombre %> </p>
+                        <p class="desc-a"><%= products[i].descripcion %> </p>
+                        <p class="categoria-a"><%= products[i].categoria %></p>
+                        <p class="precio-a"><%= products[i].precio %></p>
                     </a>
                 </li>
             <% } %>
         </ul>
-        <a href="/products/create">Crear nuevo producto</a>
-        <section>
+        <!-- <section>
             <article>
                 <img class="producto" src="/img/4-pro-plan-sterilized-cat.png">
                 <h2>Purina Pro Plan Sterilized</h2>
@@ -106,8 +107,9 @@
                 <p class="desc">Formulado específicamente para ayudar a perros adultos con intolerancias y alergias alimentarias o sensibilidades dermatológicas.</p>
                 <p class="precio">$1.300</p>
             </article>
-        </section>
-    </main>
+        </section> -->
+    </main> 
+    <a href="/products/create">Crear nuevo producto</a>
     <%- include('../partials/footer.ejs') %>
 </body>
 </html>

@@ -81,18 +81,9 @@
   },
   {
     "id": 11,
-    "nombre": "",
-    "descripcion": "",
-    "imagen.x": "23",
-    "imagen.y": "10",
-    "categoria": "1",
-    "precio": ""
-  },
-  {
-    "id": 12,
     "nombre": "Osspret Pack Shampoo Para Cachorros",
     "descripcion": "Higiene en general de cachorros y animales de piel delicada. Para ser usado en caninos y felinos.",
     "categoria": "3",
-    "precio": "500"
+    "precio": "550"
   }
 ]
