@@ -26,6 +26,12 @@ const controller = {
         else return res.send("Producto no encontrado");
     },
 
-}
+    delete: (req, res) => {
+        let productFiltrados = products.filter(product => product.id != req.params.id);
+        fs.writeFileSync(productsJSON, JSON.stringify(productFiltrados, null, 2))
+        return res.render("products/list", {products: productFiltrados})
+    }
+
+};
 
 module.exports = controller;

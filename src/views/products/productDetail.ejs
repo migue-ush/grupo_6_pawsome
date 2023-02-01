@@ -17,9 +17,12 @@
             <img class="producto-img" src="" alt="imagen del producto">
             <h2 class="titulo-a"><%= product.nombre %></p>
             <p class="desc-a"><%= product.descripcion %></p>
-            <h6 class="categoria-a"><%= product.categoria %></h6>
-            <h4 class="precio-a"><%= product.precio %></h4>
+            <p class="categoria-a"><%= product.categoria %></p>
+            <p class="precio-a"><%= product.precio %></p>
         </section>
+        <form action="/products/delete/<%= product.id %>?_method=delete" method="POST">
+            <button type="submit">Borrar</button>
+        </form>
     <%- include('../partials/footer.ejs') %>
 </body>
 </html>

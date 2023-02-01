@@ -11,5 +11,7 @@ router.get('/create', productController.create);
 
 router.post('/create', productController.processCreate);
 
+router.delete('/delete/:id', productController.delete);
+
 
 module.exports = router;
