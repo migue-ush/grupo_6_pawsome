@@ -8,16 +8,16 @@
     <div class="create-form">
     <form action="/products/create" method="POST" enctype="multipart/form-data">
         <fieldset>
+            <label for="product-image" class="label-style">Imagen del producto</label>
+            <input name="imagen" type="file" class="create-form-input" id="product-image">
+        </fieldset>
+        <fieldset>
             <label for="product-name" class="label-style">Nombre del producto</label>
             <input class="create-form-input" name="nombre" type="text" id="product-name">
         </fieldset>
         <fieldset>
             <label for="product-description" class="label-style">Descripcion del producto</label>
             <input class="create-form-input" name="descripcion" type="text" id="product-description">
-        </fieldset>
-        <fieldset>
-            <label for="product-image" class="label-style">Imagen del producto</label>
-            <input class="create-form-input" name="imagen" type="file" id="product-image">
         </fieldset>
         <fieldset>
             <label for="product-category" class="label-style">Categoría del producto</label>

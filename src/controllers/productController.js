@@ -12,6 +12,7 @@ const controller = {
     processCreate: (req, res) => {
         let id = products[products.length-1].id + 1
         let productoNuevo = {id, ...req.body}
+        productoNuevo.imagen = req.file.filename
         products.push(productoNuevo)
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products')
