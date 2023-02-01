@@ -527,10 +527,6 @@ p {
         margin: auto;
     }
 
-    .titulo {
-        display:none;
-    }
-
     header nav {
         display: block;
         display: flex;
