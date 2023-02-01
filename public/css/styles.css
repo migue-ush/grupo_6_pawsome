@@ -12,6 +12,10 @@ body {
 
 /* HEADER */
 
+.fit {
+    display:none;
+}
+
 header {
     background-color:white;
 }
@@ -160,7 +164,9 @@ fieldset {
     border-color:transparent;
 }
 
+
 /* MAIN */
+
 
 .titulo {
     font-family:'Roboto', sans-serif;
@@ -254,17 +260,24 @@ h4 {
     margin-left:auto;
     margin-right:auto;
     color:#7a6c5d;
-    padding-bottom:15px;
 }
 
 .precio {
     font-size:17px;
-    color:#2a3d45;
+    background-color:#c17c74;
+    color:white;
     font-weight:bold;
     padding:10px;
-    margin-left:3px;
-    text-align:left;
-    width:30vw;
+    text-align:center;
+    width:80px;
+    height:40px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:15px;
+    margin-top:15px;
 }
 
 .aboutus-image {
@@ -498,6 +511,10 @@ p {
     padding:10px;
 }
 
+.imgbox {
+    display:none;
+}
+
 /* TABLET */
 
 @media (min-width: 420px){
@@ -546,11 +563,56 @@ p {
         flex-wrap: wrap;
     }
 
+    .imgbox {
+        display: grid;
+        width:100%;
+    }
+
+    .fit {
+        display:none
+    }
+
+    .img-logo {
+        max-width:300px;
+        top:40px;
+        margin-top:0px;
+        margin-bottom:90px;
+        position:relative;
+        border-radius:100%;
+        width:65%;
+        z-index:9;
+    }
+
 }
 
 /* DESKTOP */
 
-@media (min-width:768px){
+@media (min-width:770px){
+
+    .header-images {
+        width:100%;
+    }
+
+    .imgbox {
+        display:grid;
+        width:100%;
+    }
+
+    .fit {
+        display:grid;
+        max-width:100%;
+        max-height:100vh;
+        margin:auto;
+        margin-top:-190px;
+        z-index:1;
+    }
+
+    .img-logo {
+        border:5px solid #f6f6f6;
+        z-index:9;
+        justify-content:center;
+    }
+    
     header img {
         max-width:350px;
     }
