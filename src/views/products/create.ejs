@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <title>Pawsome</title>
-    </head>
+    <%- include('../partials/head.ejs') %>
 <body>
 <%- include('../partials/header.ejs') %>
 <main>
     <h2>Creación de productos</h2>
     <div class="create-form">
-    <form action="/products/create" method="POST">
+    <form action="/products/create" method="POST" enctype="multipart/form-data">
         <fieldset>
             <label for="product-name" class="label-style">Nombre del producto</label>
             <input class="create-form-input" name="nombre" type="text" id="product-name">
@@ -26,7 +17,7 @@
         </fieldset>
         <fieldset>
             <label for="product-image" class="label-style">Imagen del producto</label>
-            <input class="create-form-input" name="imagen" type="image" id="product-image">
+            <input class="create-form-input" name="imagen" type="file" id="product-image">
         </fieldset>
         <fieldset>
             <label for="product-category" class="label-style">Categoría del producto</label>

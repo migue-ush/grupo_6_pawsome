@@ -1,5 +1,13 @@
 const express = require('express');
 const router = express.Router();
+// const multer = require('multer');
+
+// const multerDiskStorage = multer.diskStorage({
+//     detination: (req, file, cb) => {
+
+//     },
+//     filename:(req, file, cb) => {
+// })
 
 const productController = require('../controllers/productController');
 
