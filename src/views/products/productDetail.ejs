@@ -9,7 +9,7 @@
             <h2 class="titulo-a"><%= product.nombre %></p>
             <p class="desc-a"><%= product.descripcion %></p>
             <p class="categoria-a"><%= product.categoria %></p>
-            <p class="precio-a"><%= product.precio %></p>
+            <p class="precio-a"><label>$  </label><%= product.precio %></p>
         </section>
         <form action="/products/delete/<%= product.id %>?_method=delete" method="POST">
             <button type="submit">Borrar</button>

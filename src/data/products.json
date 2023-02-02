@@ -87,35 +87,11 @@
     "precio": "550"
   },
   {
-    "id": 12,
-    "nombre": "hola",
-    "descripcion": "jkhdafkdvxccvxoiedns",
-    "imagen": "",
-    "categoria": "3",
-    "precio": "22220"
-  },
-  {
-    "id": 13,
-    "nombre": "hola 2",
-    "descripcion": "kjdsfchjxbdsi",
-    "imagen": "",
-    "categoria": "2",
-    "precio": "123444"
-  },
-  {
-    "id": 14,
-    "nombre": "Alicate Cortauñas Small con Lima",
-    "descripcion": "Material resistente. Este juego de cortaúñas para mascotas está hecho de material de acero de calidad. El mango antideslizante es cómodo de sostener, la tijera de las garras es segura, el poderoso resorte puede ayudarlo a  controlar su fuerza, evitar lastimar a su mascota y salvar su esfuerzo.",
-    "imagen": "1-nexgard-perros.png",
-    "categoria": "1",
-    "precio": "1200"
-  },
-  {
     "id": 15,
-    "nombre": "Alicate con Lima",
-    "descripcion": "Alicate y lima de alta calidad para us mascotas",
-    "categoria": "3",
-    "precio": "12000",
-    "imagen": "1675294720674.png"
+    "nombre": "Alfombra Sanitaria Max (70cmx55cm)",
+    "descripcion": "Bandeja Plástica  - Contiene al paño  - Lavable  - Resistente  Paño con Gel Absorbente  - Las patitas quedan secas - Reduce olores en el ambiente - Absorbe y retiene la orina  Alfombra de pasto sintético suave - Hipoalergénico - Con base de caucho perforado - Lavable",
+    "categoria": "1",
+    "precio": "950",
+    "imagen": "1675296179174.png"
   }
 ]

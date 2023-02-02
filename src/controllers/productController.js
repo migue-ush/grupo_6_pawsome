@@ -24,13 +24,13 @@ const controller = {
     display: (req, res) => {
         let product = products.find(row => row.id == req.params.id);
         if (product) return res.render("products/productDetail", {product: product});
-        else return res.send("Producto no encontrado");
+        else return res.send("No se encontró el producto");
     },
 
     delete: (req, res) => {
         let productFiltrados = products.filter(product => product.id != req.params.id);
         fs.writeFileSync(productsJSON, JSON.stringify(productFiltrados, null, 2))
-        return res.render("products/list", {products: productFiltrados})
+        return res.render("products/productList", {products: productFiltrados})
     }
 
 };
