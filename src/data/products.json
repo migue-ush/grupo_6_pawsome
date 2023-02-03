@@ -20,8 +20,9 @@
     "nombre": "Purina Pro Plan Puppy",
     "descripcion": "Protección durante su primer año de vida. Formulado con carne fresca de pollo como ingrediente principal, además de vitaminas y minerales esenciales, PRO PLAN® Puppy Razas Medianas ofrece una óptima nutrición para cachorros en crecimiento.",
     "imagen": "image",
-    "categoria": 1,
-    "price": 2450
+    "categoria": "6-pro-plan-puppy-razas-medianas.png",
+    "price": 2450,
+    "precio": "Protección durante su primer año de vida. Formulado con carne fresca de pollo como ingrediente principal, además de vitaminas y minerales esenciales, PRO PLAN® Puppy Razas Medianas ofrece una óptima nutrición para cachorros en crecimiento."
   },
   {
     "id": 4,

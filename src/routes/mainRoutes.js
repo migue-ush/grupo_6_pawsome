@@ -11,10 +11,6 @@ router.get('/login', mainController.login)
 
 router.get('/productCart', mainController.cart)
 
-// router.get('/productDetail', mainController.detail)
-
-// router.get('/productList', mainController.list)
-
 router.get('/about', mainController.about)
 
 

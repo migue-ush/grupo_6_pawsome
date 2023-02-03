@@ -2,12 +2,39 @@
 <html lang="es">
     <%- include('../partials/head.ejs') %>
 <body>
-    <%- include('../partials/header.ejs') %>
-        <h2>Edición de producto</h2>
-        <section></section>
-        <form action="/products/productEdit/<%= product.id %>?_method=put" method="POST">
-            <button type="submit">Editar</button>
-        </form>
-    <%- include('../partials/footer.ejs') %>
+<%- include('../partials/header.ejs') %>
+<main>
+    <h2>Edición de producto</h2>
+    <div class="create-form">
+    <form action="/products/productEdit/<%= product.id %>?_method=put" method="POST">
+        <fieldset>
+            <label for="product-image" class="label-style">Imagen del producto</label>
+            <input value="<%= product.imagen %>" name="imagen" type="file" class="create-form-input" id="product-image">
+        </fieldset>
+        <fieldset>
+            <label for="product-name" class="label-style">Nombre del producto</label>
+            <input value="<%= product.nombre %>" class="create-form-input" name="nombre" type="text" id="product-name">
+        </fieldset>
+        <fieldset>
+            <label for="product-description" class="label-style">Descripcion del producto</label>
+            <input value="<%= product.descripcion %>" class="create-form-input" name="descripcion" type="text" id="product-description">
+        </fieldset>
+        <fieldset>
+            <label for="product-category" class="label-style">Categoría del producto</label>
+            <select class="create-form-input" name="categoria" id="product-category">
+                <option <% if (product.categoria == 1) { %> <%= 'selected' %> <% } %> value="1">Perros</option>
+                <option <% if (product.categoria == 2) { %> <%= 'selected' %> <% } %> value="2">Gatos</option>
+                <option <% if (product.categoria == 3) { %> <%= 'selected' %> <% } %> value="3">>Ambos</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="product-price" class="label-style">Precio del producto</label>
+            <input value="<%= product.precio %>" class="create-form-input" name="precio" type="number" id="product-price">
+        </fieldset>
+        <button type="submit" class="create-button">EDITAR</button>
+    </form>
+</div>
+</main>
+<%- include('../partials/footer.ejs') %>
 </body>
 </html>

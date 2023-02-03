@@ -22,6 +22,12 @@ const controller = {
         return res.render("products/productList", {products: products});
     },
 
+    display: (req, res) => {
+        let product = products.find(row => row.id == req.params.id);
+        if (product) return res.render("products/productDetail", {product: product});
+        else return res.send("No se encontró el producto");
+    },
+
     edit: (req, res) => {
         let product = products.find(row => row.id == req.params.id)
         if (product) return res.render("products/productEdit", {product: product});
@@ -32,19 +38,16 @@ const controller = {
         products.forEach(row => {
             if (row.id == req.params.id) {
                 row.nombre = req.body.nombre
-                row.precio = req.body.precio
+                row.precio = req.body.descripcion
                 row.categoria = req.body.categoria
+                row.categoria = req.body.precio
+                row.categoria = req.body.imagen
             }
         })
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products')
     },
         
-    display: (req, res) => {
-        let product = products.find(row => row.id == req.params.id);
-        if (product) return res.render("products/productDetail", {product: product});
-        else return res.send("No se encontró el producto");
-    },
 
     delete: (req, res) => {
         let productFiltrados = products.filter(product => product.id != req.params.id);

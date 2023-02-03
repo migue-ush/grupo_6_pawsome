@@ -13,10 +13,8 @@ app.use(methodOverride('_method'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// const mainRoutes = require('./routes/mainRoutes');
-// app.use('/', mainRoutes)
 const indexRoutes = require('./routes/mainRoutes');
-app.use("/",indexRoutes);
+app.use("/", indexRoutes);
 
 const productRoutes = require('./routes/productRoutes');
 app.use('/products', productRoutes)
