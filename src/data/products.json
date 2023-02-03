@@ -93,5 +93,13 @@
     "categoria": "1",
     "precio": "950",
     "imagen": "1675296179174.png"
+  },
+  {
+    "id": 16,
+    "nombre": "Royal Canin Mini Puppy Wet",
+    "descripcion": "Alimento húmedo marca Royal Canin para perros cachorros de talla pequeña (hasta 10kg de peso adulto). Hasta los 10 meses de edad.",
+    "categoria": "1",
+    "precio": "490",
+    "imagen": "1675446487657.webp"
   }
 ]
