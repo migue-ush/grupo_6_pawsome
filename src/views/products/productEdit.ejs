@@ -6,10 +6,10 @@
 <main>
     <h2>Edición de producto</h2>
     <div class="create-form">
-    <form action="/products/productEdit/<%= product.id %>?_method=put" method="POST">
+    <form action="/products/productEdit/<%= product.id %>?_method=put" method="POST" enctype="multipart/form-data">
         <fieldset>
             <label for="product-image" class="label-style">Imagen del producto</label>
-            <input value="<%= product.imagen %>" name="imagen" type="file" class="create-form-input" id="product-image">
+            <input value="<%= product.imagen %>" class="create-form-input" name="imagen" type="file" id="product-image">
         </fieldset>
         <fieldset>
             <label for="product-name" class="label-style">Nombre del producto</label>
@@ -24,7 +24,7 @@
             <select class="create-form-input" name="categoria" id="product-category">
                 <option <% if (product.categoria == 1) { %> <%= 'selected' %> <% } %> value="1">Perros</option>
                 <option <% if (product.categoria == 2) { %> <%= 'selected' %> <% } %> value="2">Gatos</option>
-                <option <% if (product.categoria == 3) { %> <%= 'selected' %> <% } %> value="3">>Ambos</option>
+                <option <% if (product.categoria == 3) { %> <%= 'selected' %> <% } %> value="3">Ambos</option>
             </select>
         </fieldset>
         <fieldset>

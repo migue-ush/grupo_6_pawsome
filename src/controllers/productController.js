@@ -37,11 +37,11 @@ const controller = {
     update: (req, res) => {
         products.forEach(row => {
             if (row.id == req.params.id) {
+                row.imagen = req.body.imagen
                 row.nombre = req.body.nombre
-                row.precio = req.body.descripcion
+                row.descripcion = req.body.descripcion
                 row.categoria = req.body.categoria
-                row.categoria = req.body.precio
-                row.categoria = req.body.imagen
+                row.precio = req.body.precio  
             }
         })
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))

@@ -1,106 +1,82 @@
 [
   {
-    "id": 1,
-    "nombre": "Purina Pro Plan Sterilized",
-    "descripcion": "Alimento completo y balanceado para gatos adultos castrados o esterilizados. La esterilización y/o castración conduce a cambios que pueden predisponer a un aumento de peso.  OptiRenal ayuda a mantener el estado corporal óptimo",
-    "imagen": "image",
-    "categoria": 2,
-    "price": 1450
-  },
-  {
-    "id": 2,
-    "nombre": "Purina Pro Plan",
-    "descripcion": "Alimento completo y balanceado para gatos adultos de todas las razas. Es una tecnología exclusiva, con una combinación de prebióticos y antioxidantes naturales, que ayudan a optimizar la digestión y a mantener fuertes las defensas naturales de tu gato, protegiendo su sistema inmunológico contra las amenazas externas.",
-    "imagen": "image",
-    "categoria": 2,
-    "price": 2100
-  },
-  {
-    "id": 3,
-    "nombre": "Purina Pro Plan Puppy",
-    "descripcion": "Protección durante su primer año de vida. Formulado con carne fresca de pollo como ingrediente principal, además de vitaminas y minerales esenciales, PRO PLAN® Puppy Razas Medianas ofrece una óptima nutrición para cachorros en crecimiento.",
-    "imagen": "image",
-    "categoria": "6-pro-plan-puppy-razas-medianas.png",
-    "price": 2450,
-    "precio": "Protección durante su primer año de vida. Formulado con carne fresca de pollo como ingrediente principal, además de vitaminas y minerales esenciales, PRO PLAN® Puppy Razas Medianas ofrece una óptima nutrición para cachorros en crecimiento."
-  },
-  {
-    "id": 4,
-    "nombre": "Purina Pro Plan Adulto",
-    "descripcion": "Provee nutrición de avanzada que ayuda a los perros de razas medianas de 1 a 7 años de edad a mantenerse fuertes y llenos de vitalidad.",
-    "imagen": "image",
-    "categoria": 1,
-    "price": 2600
-  },
-  {
-    "id": 5,
-    "nombre": "Palitos de Pollo",
-    "descripcion": "Palitos horneados con sabor a pollo. El snack ideal para sacar a pasear a tu perro. Producto libre de colorantes artificiales.",
-    "imagen": "image",
-    "categoria": 1,
-    "price": 1200
-  },
-  {
-    "id": 6,
-    "nombre": "Huesos",
-    "descripcion": "El Hueso Flotante de la Línea Water Action es un juguete antistress para divertirse en el agua con tus mascotas. 100% flotantes, resistente al agua y a la exposición del sol.",
-    "imagen": "image",
-    "categoria": 1,
-    "price": 1450
-  },
-  {
-    "id": 7,
-    "nombre": "Osspret Pack Shampoo Para Cachorros",
-    "descripcion": "Higiene en general de cachorros y animales de piel delicada. Para ser usado en caninos y felinos.",
-    "imagen": "image",
-    "categoria": 3,
-    "price": 1100
-  },
-  {
-    "id": 8,
-    "nombre": "Frontline Spray",
-    "descripcion": "Actúa con velocidad en las primeras 4 horas tras la aplicación matando pulgas, garrapatas y piojos. FRONTLINE®Spray se puede aplicar en cachorros de gatos y perros a partir de los 2 días de vida.",
-    "imagen": "image",
-    "categoria": 3,
-    "price": 1300
-  },
-  {
-    "id": 9,
-    "nombre": "Nexgard Comprimidos",
-    "descripcion": "Nexgard es una tableta masticable con sabor a carne y puede administrarse con y sin comida. Protege al perro frente a pulgas y garrapatas. ",
-    "imagen": "image",
-    "categoria": 1,
-    "price": 1240
-  },
-  {
-    "id": 10,
-    "nombre": "Royal Canin Hypoallergenic",
-    "descripcion": "Formulado específicamente para ayudar a perros adultos con intolerancias y alergias alimentarias o sensibilidades dermatológicas.",
-    "imagen": "image",
-    "categoria": 1,
-    "price": 1390
-  },
-  {
-    "id": 11,
-    "nombre": "Osspret Pack Shampoo Para Cachorros",
-    "descripcion": "Higiene en general de cachorros y animales de piel delicada. Para ser usado en caninos y felinos.",
-    "categoria": "3",
-    "precio": "550"
-  },
-  {
-    "id": 15,
-    "nombre": "Alfombra Sanitaria Max (70cmx55cm)",
-    "descripcion": "Bandeja Plástica  - Contiene al paño  - Lavable  - Resistente  Paño con Gel Absorbente  - Las patitas quedan secas - Reduce olores en el ambiente - Absorbe y retiene la orina  Alfombra de pasto sintético suave - Hipoalergénico - Con base de caucho perforado - Lavable",
-    "categoria": "1",
-    "precio": "950",
-    "imagen": "1675296179174.png"
-  },
-  {
     "id": 16,
     "nombre": "Royal Canin Mini Puppy Wet",
     "descripcion": "Alimento húmedo marca Royal Canin para perros cachorros de talla pequeña (hasta 10kg de peso adulto). Hasta los 10 meses de edad.",
     "categoria": "1",
     "precio": "490",
     "imagen": "1675446487657.webp"
+  },
+  {
+    "id": 17,
+    "nombre": "NexGard Comprimidos",
+    "descripcion": "Nexgard es una tableta masticable con sabor a carne y puede administrarse con y sin comida.  Protege al perro frente a pulgas y garrapatas.",
+    "categoria": "1",
+    "precio": "1250",
+    "imagen": "1675464871441.png"
+  },
+  {
+    "id": 18,
+    "nombre": "Purina Pro Plan Gato Adulto",
+    "descripcion": "Alimento completo y balanceado para gatos adultos de todas las razas. Es una tecnología exclusiva, con una combinación de prebióticos y antioxidantes naturales, que ayudan a optimizar la digestión y  a mantener fuertes las defensas naturales de tu gato, protegiendo su sistema inmunológico contra las amenazas externas.",
+    "categoria": "2",
+    "precio": "950",
+    "imagen": "1675464949649.png"
+  },
+  {
+    "id": 19,
+    "nombre": "Purina Pro Plan Sterilized",
+    "descripcion": "Alimento completo y balanceado para gatos adultos castrados o esterilizados. La esterilización y/o castración conduce a cambios que pueden predisponer a un aumento de peso. OptiRenal® ayuda a mantener el estado corporal óptimo.",
+    "categoria": "2",
+    "precio": "2100",
+    "imagen": "1675466351050.png"
+  },
+  {
+    "id": 20,
+    "nombre": "Purina Pro Plan Adulto Razas Medianas",
+    "descripcion": "Provee nutrición de avanzada que ayuda a los perros de razas medianas de 1 a 7 años de edad a mantenerse fuertes y llenos de vitalidad.",
+    "categoria": "1",
+    "precio": "1950",
+    "imagen": "1675466484806.png"
+  },
+  {
+    "id": 21,
+    "nombre": "Purina Pro Plan Puppy Razas Medianas",
+    "descripcion": "Protección durante su primer año de vida. Formulado con carne fresca de pollo como ingrediente principal, además de vitaminas y minerales esenciales,  PRO PLAN® Puppy Razas Medianas ofrece una óptima nutrición para cachorros en crecimiento.",
+    "categoria": "1",
+    "precio": "2235",
+    "imagen": "1675466591302.png"
+  },
+  {
+    "id": 22,
+    "nombre": "CanCat Litera Komoda",
+    "descripcion": "La Linea de Literas ofrecen una solución eficiente para crear un ambiente limpio e higiénico tanto para tu gato como para tu hogar. La Litera Komoda pertenece a la Línea Premium de Cancat, tiene un diseño moderno y exclusivo para darle privacidad a nuestra mascota. TAMAÑO: 54 cm x 40 cm x 39cm",
+    "categoria": "3",
+    "precio": "5800",
+    "imagen": "1675466698852.png"
+  },
+  {
+    "id": 23,
+    "nombre": "Alfombra Sanitaria Max (70cmx55cm)",
+    "descripcion": "Bandeja Plástica  - Contiene al paño  - Lavable  - Resistente  Paño con Gel Absorbente  - Las patitas quedan secas - Reduce olores en el ambiente - Absorbe y retiene la orina  Alfombra de pasto sintético suave - Hipoalergénico - Con base de caucho perforado - Lavable",
+    "categoria": "1",
+    "precio": "3650",
+    "imagen": "1675466768905.png"
+  },
+  {
+    "id": 24,
+    "nombre": "Osspret Pack Shampoo Para Cachorros (botella de 250cm3)",
+    "descripcion": "Higiene en general de cachorros y animales de piel delicada. Para ser usado en caninos y felinos.",
+    "categoria": "3",
+    "precio": "1030",
+    "imagen": "1675466857400.png"
+  },
+  {
+    "id": 25,
+    "nombre": "Alicate Cortauñas Small con Lima",
+    "descripcion": "Material resistente. Este juego de cortaúñas para mascotas está hecho de material de acero de calidad. El mango antideslizante es cómodo de sostener, la tijera de las garras es segura, el poderoso resorte puede ayudarlo a  controlar su fuerza, evitar lastimar a su mascota y salvar su esfuerzo.",
+    "categoria": "3",
+    "precio": "890",
+    "imagen": "1675466954261.png"
   }
 ]
