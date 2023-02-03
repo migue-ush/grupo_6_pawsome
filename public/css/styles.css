@@ -167,6 +167,20 @@ fieldset {
 
 /* MAIN */
 
+.product-container article {
+    width:550px;
+}
+
+.products-desc {
+    font-size:13px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    width:450px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#7a6c5d;
+}
+
 .products-image {
     max-width:350px;
     margin-left:auto;
