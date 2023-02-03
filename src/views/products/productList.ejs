@@ -10,11 +10,11 @@
             <% for(let i=0; i<products.length; i++) {%>
                 <li class="product-container">
                     <a href="/products/productDetail/<%= products[i].id %>">
-                        <img class="producto-img" src="/img/<%= products[i].imagen %>" alt="imagen del producto">
-                        <h2 class="titulo-a"><%= products[i].nombre %> </p>
-                        <p class="desc-a"><%= products[i].descripcion %> </p>
-                        <p class="categoria-a"><%= products[i].categoria %></p>
-                        <p class="precio-a"><label>$  </label><%= products[i].precio %></p>
+                        <img class="producto" src="/img/<%= products[i].imagen %>" alt="imagen del producto">
+                        <h2 class="titulo"><%= products[i].nombre %> </p>
+                        <p class="desc"><%= products[i].descripcion %> </p>
+                        <p class="categoria"><%= products[i].categoria %></p>
+                        <p class="precio"><label>$  </label><%= products[i].precio %></p>
                     </a>
                 </li>
             <% } %>
