@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+        <h2>Edición de producto</h2>
+        <section></section>
+        <form action="/products/productEdit/<%= product.id %>?_method=put" method="POST">
+            <button type="submit">Editar</button>
+        </form>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

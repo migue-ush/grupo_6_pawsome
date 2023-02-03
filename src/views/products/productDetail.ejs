@@ -5,14 +5,17 @@
     <%- include('../partials/header.ejs') %>
         <h2>Detalle de producto</h2>
         <section>
-            <img class="producto" src="/img/<%= product.imagen %>" alt="imagen del producto">
-            <h2 class="titulo"><%= product.nombre %></p>
-            <p class="desc"><%= product.descripcion %></p>
-            <p class="categoria"><%= product.categoria %></p>
-            <p class="precio"><label>$  </label><%= product.precio %></p>
+            <article>
+                <img class="producto" src="/img/<%= product.imagen %>" alt="imagen del producto">
+                    <div class="linea"></div>
+                        <h2 class="titulo"><%= product.nombre %></p>
+                            <p class="desc"><%= product.descripcion %></p>
+                            <p class="categoria"><%= product.categoria %></p>
+                            <p class="precio"><label>$  </label><%= product.precio %></p>
+            </article>
         </section>
         <form action="/products/delete/<%= product.id %>?_method=delete" method="POST">
-            <button type="submit">Borrar</button>
+            <button  type="submit" class="borrar">Borrar</button>
         </form>
     <%- include('../partials/footer.ejs') %>
 </body>

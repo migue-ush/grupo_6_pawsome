@@ -23,6 +23,10 @@ router.get('/productDetail/:id', productController.display);
 
 router.get('/create', productController.create);
 
+router.get('/productEdit/:id', productController.edit);
+
+router.put('/productEdit/:id', productController.update);
+
 router.post('/create', uploadFile.single('imagen'), productController.processCreate);
 
 router.delete('/delete/:id', productController.delete);

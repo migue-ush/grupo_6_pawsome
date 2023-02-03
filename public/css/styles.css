@@ -204,7 +204,11 @@ article {
     margin-right:auto;
     border-top:10px solid #f6f6f6;
     margin-bottom:80px;
-    border-radius:5px;
+    border-radius:5px;   
+}
+
+.detail{
+    text-decoration: none;
 }
 
 .producto {
@@ -386,6 +390,22 @@ h2 a {
     padding:8px;
     margin-top:15px;
     width:60vw;
+    font-weight:bold;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+}
+
+.borrar {
+    text-transform:uppercase;
+    background-color:#ddc9b4;
+    border-color:transparent;
+    color:#3E3C2B;
+    margin-left: auto;
+    margin-right: auto;
+    padding:8px;
+    margin-top:15px;
+    width:15vw;
     font-weight:bold;
     margin-bottom:20px;
     display: flex;

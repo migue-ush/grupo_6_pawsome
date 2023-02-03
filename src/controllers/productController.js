@@ -17,8 +17,27 @@ const controller = {
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products')
     },
+
     list: (req, res) => {
         return res.render("products/productList", {products: products});
+    },
+
+    edit: (req, res) => {
+        let product = products.find(row => row.id == req.params.id)
+        if (product) return res.render("products/productEdit", {product: product});
+        else return res.send("No se encontró el producto")
+    },
+
+    update: (req, res) => {
+        products.forEach(row => {
+            if (row.id == req.params.id) {
+                row.nombre = req.body.nombre
+                row.precio = req.body.precio
+                row.categoria = req.body.categoria
+            }
+        })
+        fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
+        return res.redirect('/products')
     },
         
     display: (req, res) => {
