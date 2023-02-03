@@ -167,6 +167,15 @@ fieldset {
 
 /* MAIN */
 
+.products-image {
+    max-width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: center;
+}
+
+
 
 .titulo {
     font-family:'Roboto', sans-serif;
@@ -536,6 +545,7 @@ p {
 .imgbox {
     display:none;
 }
+
 
 /* TABLET */
 
