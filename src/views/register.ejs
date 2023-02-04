@@ -8,11 +8,21 @@
         <h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>
         <div class="registro">
         <form class="formulario" method="POST">
-            <input type="text" class="dato" name="nombre" id="nombre" placeholder="NOMBRE *" require>
-            <input type="text" class="dato" name="apellido" id="apellido" placeholder="APELLIDO *" require>
+            <input type="text" class="dato" name="firstName" id="firstName" placeholder="NOMBRE *" require>
+            <input type="text" class="dato" name="lastName" id="lastName" placeholder="APELLIDO *" require>
             <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" require>
             <input type="password" class="dato" name="contrasenia" id="contrasenia" placeholder="CONTRASEÑA *" require>
-	        <input type="password" class="dato" name="contrasenia" id="contrasenia" placeholder="CONFIRMAR CONTRASEÑA *" require>
+            <label for="product-image" class="label-style">CATEGORIA</label>
+            <div class="aceptar">
+                <input type="radio" value="customer" name="categoria" id="categoria" class="checkbox">
+                <label for="acepto">Customer *</label>
+            </div>
+            <div class="aceptar">
+                <input type="radio" value="admin" name="categoria" id="categoria" class="checkbox">
+                <label for="acepto">Admin *</label>
+            </div>
+	        <label for="product-image" class="label-style">IMAGEN DE PERFIL</label>
+            <input name="imagen" type="file" class="dato" id="product-image">
         <div class="aceptar">
             <input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox">
             <label for="acepto">Acepto aviso de privacidad. Terminos y condiciones *</label>
