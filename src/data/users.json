@@ -1,20 +1,38 @@
-[ 
-    {
-        "id": 1,
-        "firstName": "nombre",
-        "lastName": "apellido",
-        "email": "email",
-        "contraseña": "password",
-        "categoria": 2,
-        "imagen": "image"
-    },
-    {
-        "id": 2,
-        "firstName": "nombre",
-        "lastName": "apellido",
-        "email": "email",
-        "contraseña": "password",
-        "categoria": 1,
-        "imagen": "image"
-    }
+[
+ {
+  "id": 1,
+  "firstName": "Michael",
+  "lastName": "Scott",
+  "email": "mscott@office.com",
+  "contraseña": "password",
+  "categoria": 2,
+  "imagen": "default.png"
+ },
+ {
+  "id": 2,
+  "firstName": "Dwight",
+  "lastName": "Schrute",
+  "email": "dwightschrute@theoffice.com",
+  "password": "password",
+  "categoria": 1,
+  "imagen": "default.png"
+ },
+ {
+  "id": 3,
+  "firstName": "Chandler",
+  "lastName": "Bing",
+  "email": "chandlerbing@friends.com",
+  "password": "password",
+  "categoria": 3,
+  "imagen": "default.png"
+ },
+ {
+  "id": 4,
+  "firstName": "Phoebe",
+  "lastName": "Buffay",
+  "email": "reginaphalange@phoebe.com",
+  "password": "password",
+  "categoria": 2,
+  "imagen": "default.png"
+ }
 ]

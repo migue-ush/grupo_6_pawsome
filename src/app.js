@@ -19,6 +19,9 @@ app.use("/", indexRoutes);
 const productRoutes = require('./routes/productRoutes');
 app.use('/products', productRoutes)
 
+const userRoutes = require('./routes/userRoutes');
+app.use('/user', userRoutes)
+
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
 });
