@@ -570,12 +570,27 @@ p {
 
 .contenedor-descuentos {
     margin: auto;
-    width: 60%;
+    width: 60vw;
     background: #bcac9b;
     font-size: 18px;
     text-align: center;
 }
 
+.finalizar {
+    text-transform:uppercase;
+    background-color:#ddc9b4;
+    border-color:transparent;
+    color:#3E3C2B;
+    margin-left: auto;
+    margin-right: auto;
+    padding:8px;
+    margin-top:15px;
+    width:30vw;
+    font-weight:bold;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* TABLET */
