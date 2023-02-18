@@ -457,11 +457,6 @@ main div.shopping-basket {
     color: darkgray;
     margin-right: 10px;
 }
-.contenedor-descuentos {
-    background: #bcac9b;
-    font-size: 18px;
-    text-align: center;
-}
 
 main div.shopping-basket h1 i {
     font-size:18px;
@@ -570,6 +565,17 @@ p {
 .imgbox {
     display:none;
 }
+
+/* SHOPPING CART */
+
+.contenedor-descuentos {
+    margin: auto;
+    width: 60%;
+    background: #bcac9b;
+    font-size: 18px;
+    text-align: center;
+}
+
 
 
 /* TABLET */
