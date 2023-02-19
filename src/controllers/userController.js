@@ -13,17 +13,36 @@ const controller = {
             });
         }
 
+        let userInDB = User.findByField('email', req.body.email);
+            if (userInDB){
+                return res.render('userRegisterForm', {
+                    errors: {
+                        email: {
+                            msg: 'Este email ya esá registrado'
+                        }
+                    },
+                    oldData: req.body
+                });
+            }
+
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
             imagen: req.file.filename
         }
 
-        User.create(userToCreate)
+        let userCreated = User.create(userToCreate);
+
+        return res.redirect('/login');
     },
 
     login: (req,res) => {
-        return res.render ('login');
+        return res.render('login');
+    },
+
+    loginProcess: (req,res) => {
+        let userToLogin = User.findByField('email', req.body.email);
+        return res.send(userToLogin);
     },
 
     profile: (req,res) => {
