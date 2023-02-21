@@ -9,7 +9,7 @@
        
          
         <div class="registro">
-        <form class="formulario" method="POST" action="/register" enctype="multipart/form-data">
+        <form class="formulario" method="POST" action="/users/register" enctype="multipart/form-data">
             <input type="text" class="dato" name="firstName" id="firstName" placeholder="NOMBRE *" value="<%= locals.oldData ? oldData.firstName : null%>" require>
             <% if (locals.errors && errors.firstName) { %>
                 <div class="mensaje-error">
@@ -50,6 +50,11 @@
             <% } %>
 	        <label for="product-image" class="label-style">IMAGEN DE PERFIL</label>
             <input name="avatar" type="file" class="dato" id="product-image">
+            <% if (locals.errors && errors.avatar) { %>
+                <div class="text-warning">
+                    <%= errors.avatar.msg %>
+                </div>
+            <% } %>
         <div class="aceptar">
             <input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox">
             <label for="acepto">Acepto aviso de privacidad. Terminos y condiciones *</label>
