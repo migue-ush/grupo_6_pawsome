@@ -45,11 +45,12 @@ const validations = [
     })
 ];
 // router.get('/', usersController.users);
-router.get('/', usersController.register);
+router.get('/users', usersController.register);
+router.get('/register', usersController.register);
 router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 
 router.get('/login', usersController.login);
 router.post('/login', usersController.loginProcess);
-router.get('/profile/:userId', usersController.profile);
+router.get('/profile/', usersController.profile);
 
 module.exports = router;
