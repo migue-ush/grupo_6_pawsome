@@ -29,3 +29,19 @@ y horario para juntarnos y discutir cada Sprint.
 
 + Stop Doing: Llegamos al Sprint con varias dudas e incertidumbres de como lograr algunas de las tareas que forman parte de las entregas obligatorias. Estas dudas pueden ser
 aclaradas con alguno de los docentes, pero al llegar con el tiempo justo a la fecha de entrega del Sprint, ya nos ha pasado que dejamos alguna tarea para completarla más adelante, y de esta forma nos vamos atrasando. 
+
+### Conclusiones del Cuarto Sprint 
+
++ Start Doing: Comenzamos a comunicarnos al terminar lo que cada uno debía ocuparse para ver si podíamos cooperar con lo que iba a hacer algún compañero. De esa manera pudimos ir regulando esfuerzos y poner el foco en las cosas que más lo requerían.
+Dejamos de dar vueltas con temas que nos complicaban, para verlos juntos en algún encuentro grupal y en el momento continuar con otros temas, para no demorarnos y no estancarnos en el progreso.
+
++ More of: Trabajamos más continuamente en el proyecto, de forma más constante, sin dejar mucho tiempo entre una tarea y las otras.
+
++ Keep Doing: Continuamos trabajando con las prioridades de las tareas, desde la más importantes hasta las opcionales hacia el final. Esto nos permite trabajar un poco mejor con los tiempos. 
+
++ Less of: Insistir con temas complejos o que nos demandan mucho tiempo por no sacarlos en el momento, para no demorar el resto de las tareas.
+
++ Stop Doing: Quedarnos con dudas hasta la última semana, y confiar en que en poco tiempo se podría resolver. No dejar las dudas para el final, sino tratar de sacarnos esas dudas al principio para poder trabajar más tranquilos luego.
+
+
+
