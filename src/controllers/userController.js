@@ -1,9 +1,9 @@
 const { validationResult } = require('express-validator')
 
 const controller = {
-    users: (req, res) => {
-        res.render('users')
-    },
+    // users: (req, res) => {
+    //     res.render('users')
+    // },
     register: (req, res) => {
         return res.render('register');
     },
@@ -38,7 +38,7 @@ const controller = {
 
         let userCreated = User.create(userToCreate);
 
-        return res.redirect('/login');
+        return res.redirect('/users/login');
     },
 
     login: (req,res) => {
@@ -47,9 +47,29 @@ const controller = {
 
     loginProcess: (req,res) => {
         let userToLogin = User.findByField('email', req.body.email);
-        return res.send(userToLogin);
+        
+        if(userToLogin) {
+            let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if (isOkPassword) {
+                return res.send('Ok puede ingresar');
+            }
+            return res.render('login', {
+                errors: {
+                    email: {
+                        msg: 'Las credenciales son invalidas'
+                    }
+                }
+            });
+        }
+        return res.render('login', {
+            errors: {
+                email: {
+                    msg: 'No se encuentra este email en nuestra base de datos'
+                }
+            }
+        });
     },
-
+    
     profile: (req,res) => {
         return res.render('userProfile')
     }

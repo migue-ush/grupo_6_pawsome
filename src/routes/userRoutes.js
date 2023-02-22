@@ -44,12 +44,12 @@ const validations = [
         return true;
     })
 ];
-router.get('/', usersController.users);
-router.get('/users/register', usersController.register);
-router.post('/users/register', uploadFile.single('avatar'), validations, usersController.processRegister);
+// router.get('/', usersController.users);
+router.get('/', usersController.register);
+router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 
-router.get('/users/login', usersController.login);
-router.post('/users/login', usersController.loginProcess);
+router.get('/login', usersController.login);
+router.post('/login', usersController.loginProcess);
 router.get('/profile/:userId', usersController.profile);
 
 module.exports = router;
