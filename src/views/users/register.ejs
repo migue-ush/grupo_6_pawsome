@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main>
+        <h1><i class="fas fa-solid fa-paw"></i> Registrese aquí</h1>
+        <h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>
+       
+         
+        <div class="registro">
+        <form class="formulario" method="POST" action="/users/register" enctype="multipart/form-data">
+            <input type="text" class="dato" name="firstName" id="firstName" placeholder="NOMBRE *" value="<%= locals.oldData ? oldData.firstName : null%>" require>
+            <% if (locals.errors && errors.firstName) { %>
+                <div class="mensaje-error">
+                    <% errors.firstName.msg %>
+                </div>
+            <% } %>
+            <input type="text" class="dato" name="lastName" id="lastName" placeholder="APELLIDO *" value="<%= locals.oldData ? oldData.lastName : null%>" require>
+            <% if (locals.errors && errors.lastName) { %>
+                <div class="mensaje-error">
+                    <% errors.lastName.msg %>
+                </div>
+            <% } %>
+            <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" value="<%= locals.oldData ? oldData.email : null%>" require>
+            <% if (locals.errors && errors.email) { %>
+                <div class="mensaje-error">
+                    <% errors.email.msg %>
+                </div>
+            <% } %>
+            <input type="password" class="dato" name="password" id="password" placeholder="CONTRASEÑA *" value="<%= locals.oldData ? oldData.password : null%>" require>
+            <% if (locals.errors && errors.password) { %>
+                <div class="mensaje-error">
+                    <% errors.password.msg %>
+                </div>
+            <% } %>
+            <label for="product-image" class="label-style">CATEGORIA</label>
+            <div class="aceptar">
+                <input type="radio" value="customer" name="categoria" id="categoria" class="checkbox">
+                <label for="acepto">Customer *</label>
+            </div>
+            <div class="aceptar">
+                <input type="radio" value="admin" name="categoria" id="categoria" class="checkbox">
+                <label for="acepto">Admin *</label>
+            </div>
+            <% if (locals.errors && errors.categoria) { %>
+                <div class="mensaje-error">
+                    <% errors.categoria.msg %>
+                </div>
+            <% } %>
+	        <label for="product-image" class="label-style">IMAGEN DE PERFIL</label>
+            <input name="avatar" type="file" class="dato" id="product-image">
+            <% if (locals.errors && errors.avatar) { %>
+                <div class="text-warning">
+                    <%= errors.avatar.msg %>
+                </div>
+            <% } %>
+        <div class="aceptar">
+            <input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox">
+            <label for="acepto">Acepto aviso de privacidad. Terminos y condiciones *</label>
+        </div>
+        <div class="submit">
+            <button type="submit" class="enviar" id="button">Enviar</button>
+        </div>
+        </form>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

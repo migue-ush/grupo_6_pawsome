@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main>
+        <h1><i class="fas fa-solid fa-paw"></i> Registrese aquí</h1>
+        <h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>
+        <div class="registro">
+        <form class="formulario" method="POST">
+            <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" require>
+            <input type="password" class="dato" name="password" id="password" placeholder="CONTRASEÑA *" require>
+        <div class="aceptar">
+            <input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox">
+            <label for="acepto">Olvidé mi contraseña.</label>
+        </div>
+        <div class="submit">
+            <button type="submit" class="enviar" id="button">Enviar</button>
+        </div>
+        <h2>¿Todavía no sos parte? Registrate <a href="/users/register">AQUÍ</a></h2>
+        </form>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

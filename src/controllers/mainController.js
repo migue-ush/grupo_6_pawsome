@@ -3,13 +3,13 @@ const controller =  {
         res.render('index', {})
     },
 
-    register: (req, res) => {
-        res.render('register')
-    },
+    // register: (req, res) => {
+    //     res.render('register')
+    // },
 
-    login: (req, res) => {
-        res.render('login')
-    },
+    // login: (req, res) => {
+    //     res.render('login')
+    // },
 
     cart: (req, res) => {
         res.render('productCart')
