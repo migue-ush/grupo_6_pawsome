@@ -45,7 +45,7 @@ const validations = [
     })
 ];
 // router.get('/', usersController.users);
-router.get('/users', usersController.register);
+// router.get('/users', usersController.register);
 router.get('/register', usersController.register);
 router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 
