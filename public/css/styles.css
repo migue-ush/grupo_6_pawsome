@@ -489,6 +489,12 @@ main div.shopping-basket h1 i {
     margin:8px;
 }
 
+.mensaje-error {
+    text-align: left;
+    margin: 20px;
+    color: red;
+}
+
 
 /* FOOTER */
 

@@ -34,5 +34,15 @@
   "password": "password",
   "categoria": 2,
   "imagen": "default.png"
+ },
+ {
+  "id": 5,
+  "firstName": "Juan",
+  "lastName": "Hoyos",
+  "email": "juan@hoyos.com",
+  "password": "$2a$10$GbOLebrDG7QwWxAayt.6EeJa0bhAmwaVL2rB5iwsTiCkMs8COmq6e",
+  "categoria": "customer",
+  "acepto": "acepto",
+  "imagen": "1677193266606_img.png"
  }
 ]

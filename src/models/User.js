@@ -1,7 +1,5 @@
 const fs = require('fs')
 
-const User = require('../models/User')
-
 const User = {
     fileName: './src/data/users.json',
 

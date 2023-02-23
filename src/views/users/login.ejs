@@ -9,6 +9,11 @@
         <div class="registro">
         <form class="formulario" method="POST">
             <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" require>
+            <% if (locals.errors && errors.email) { %>
+                <div class="mensaje-error">
+                    <%= errors.email.msg %>
+                </div>
+            <% } %>
             <input type="password" class="dato" name="password" id="password" placeholder="CONTRASEÑA *" require>
         <div class="aceptar">
             <input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox">

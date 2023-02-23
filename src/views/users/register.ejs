@@ -13,25 +13,25 @@
             <input type="text" class="dato" name="firstName" id="firstName" placeholder="NOMBRE *" value="<%= locals.oldData ? oldData.firstName : null%>" require>
             <% if (locals.errors && errors.firstName) { %>
                 <div class="mensaje-error">
-                    <% errors.firstName.msg %>
+                    <%= errors.firstName.msg %>
                 </div>
             <% } %>
             <input type="text" class="dato" name="lastName" id="lastName" placeholder="APELLIDO *" value="<%= locals.oldData ? oldData.lastName : null%>" require>
             <% if (locals.errors && errors.lastName) { %>
                 <div class="mensaje-error">
-                    <% errors.lastName.msg %>
+                    <%= errors.lastName.msg %>
                 </div>
             <% } %>
             <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" value="<%= locals.oldData ? oldData.email : null%>" require>
             <% if (locals.errors && errors.email) { %>
                 <div class="mensaje-error">
-                    <% errors.email.msg %>
+                    <%= errors.email.msg %>
                 </div>
             <% } %>
             <input type="password" class="dato" name="password" id="password" placeholder="CONTRASEÑA *" value="<%= locals.oldData ? oldData.password : null%>" require>
             <% if (locals.errors && errors.password) { %>
                 <div class="mensaje-error">
-                    <% errors.password.msg %>
+                    <%= errors.password.msg %>
                 </div>
             <% } %>
             <label for="product-image" class="label-style">CATEGORIA</label>
@@ -45,13 +45,13 @@
             </div>
             <% if (locals.errors && errors.categoria) { %>
                 <div class="mensaje-error">
-                    <% errors.categoria.msg %>
+                    <%= errors.categoria.msg %>
                 </div>
             <% } %>
 	        <label for="product-image" class="label-style">IMAGEN DE PERFIL</label>
             <input name="avatar" type="file" class="dato" id="product-image">
             <% if (locals.errors && errors.avatar) { %>
-                <div class="text-warning">
+                <div class="mensaje-error">
                     <%= errors.avatar.msg %>
                 </div>
             <% } %>

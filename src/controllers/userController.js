@@ -1,9 +1,9 @@
-const { validationResult } = require('express-validator')
+const bcryptjs = require('bcryptjs');
+const { validationResult } = require('express-validator');
+
+const User = require('../models/User');
 
 const controller = {
-    // users: (req, res) => {
-    //     res.render('users')
-    // },
     register: (req, res) => {
         return res.render('users/register');
     },
@@ -38,7 +38,7 @@ const controller = {
 
         let userCreated = User.create(userToCreate);
 
-        return res.redirect('users/login');
+        return res.redirect('/users/login');
     },
 
     login: (req,res) => {
@@ -53,7 +53,7 @@ const controller = {
             if (isOkPassword) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
-                return res.redirect('/user/profile');
+                return res.redirect('/user/userProfile');
             }
             return res.render('users/login', {
                 errors: {
