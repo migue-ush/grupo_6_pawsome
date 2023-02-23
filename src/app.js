@@ -3,7 +3,9 @@ const session = require('express-session');
 const app = express();
 const path = require('path');
 const methodOverride =  require('method-override');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
+app.use(userLoggedMiddleware);
 app.use(session({
     secret: "It's a secret",
     resave: false,
