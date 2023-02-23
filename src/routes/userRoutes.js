@@ -44,13 +44,21 @@ const validations = [
         return true;
     })
 ];
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
+
 // router.get('/', usersController.users);
 // router.get('/users', usersController.register);
-router.get('/register', usersController.register);
-router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 
+// Formulario de Registro
+router.get('/register', guestMiddleware,usersController.register);
+// Procesar el registro
+router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
+// Formulario login
 router.get('/login', usersController.login);
+// Procesar login
 router.post('/login', usersController.loginProcess);
-router.get('/profile/', usersController.profile);
+// Perfil de ususario
+router.get('/profile/', authMiddleware, usersController.profile);
 
 module.exports = router;

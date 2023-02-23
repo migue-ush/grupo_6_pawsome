@@ -38,7 +38,7 @@ const controller = {
 
         let userCreated = User.create(userToCreate);
 
-        return res.redirect('/login');
+        return res.redirect('/users/login');
     },
 
     login: (req,res) => {
@@ -51,7 +51,9 @@ const controller = {
         if(userToLogin) {
             let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (isOkPassword) {
-                return res.send('Ok puede ingresar');
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+                return res.redirect('/user/profile');
             }
             return res.render('login', {
                 errors: {
@@ -71,7 +73,9 @@ const controller = {
     },
     
     profile: (req,res) => {
-        return res.render('userProfile')
+        return res.render('userProfile', {
+            user: req.session.userLogged
+        });
     }
 }
 
