@@ -5,14 +5,14 @@ const controller = {
     //     res.render('users')
     // },
     register: (req, res) => {
-        return res.render('register');
+        return res.render('users/register');
     },
 
     processRegister: (req, res) => {
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
-            return res.render('register', {
+            return res.render('users/register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             });
@@ -20,7 +20,7 @@ const controller = {
 
         let userInDB = User.findByField('email', req.body.email);
             if (userInDB){
-                return res.render('userRegisterForm', {
+                return res.render('users/register', {
                     errors: {
                         email: {
                             msg: 'Este email ya esá registrado'
@@ -38,11 +38,11 @@ const controller = {
 
         let userCreated = User.create(userToCreate);
 
-        return res.redirect('/users/login');
+        return res.redirect('users/login');
     },
 
     login: (req,res) => {
-        return res.render('login');
+        return res.render('users/login');
     },
 
     loginProcess: (req,res) => {
@@ -55,7 +55,7 @@ const controller = {
                 req.session.userLogged = userToLogin;
                 return res.redirect('/user/profile');
             }
-            return res.render('login', {
+            return res.render('users/login', {
                 errors: {
                     email: {
                         msg: 'Las credenciales son invalidas'
@@ -63,7 +63,7 @@ const controller = {
                 }
             });
         }
-        return res.render('login', {
+        return res.render('users/login', {
             errors: {
                 email: {
                     msg: 'No se encuentra este email en nuestra base de datos'
