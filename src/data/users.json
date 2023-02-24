@@ -18,31 +18,43 @@
   "imagen": "default.png"
  },
  {
-  "id": 3,
+  "id": 6,
   "firstName": "Chandler",
   "lastName": "Bing",
   "email": "chandlerbing@friends.com",
-  "password": "password",
-  "categoria": 3,
-  "imagen": "default.png"
+  "password": "$2a$10$OZVn7X.8k2ur0/J4o1NgjO51C4o0/UXqoddZ2sQONN7h7QtD4oHMK",
+  "categoria": "admin",
+  "acepto": "acepto",
+  "imagen": "1677207363865_img.png"
  },
  {
-  "id": 4,
+  "id": 7,
   "firstName": "Phoebe",
   "lastName": "Buffay",
   "email": "reginaphalange@phoebe.com",
-  "password": "password",
-  "categoria": 2,
-  "imagen": "default.png"
- },
- {
-  "id": 5,
-  "firstName": "Juan",
-  "lastName": "Hoyos",
-  "email": "juan@hoyos.com",
-  "password": "$2a$10$GbOLebrDG7QwWxAayt.6EeJa0bhAmwaVL2rB5iwsTiCkMs8COmq6e",
+  "password": "$2a$10$b/Qv79JdFwnCy9a88q6FieCV3Qc.ltQZO7H6ytuGBxEKt.Rv.WJ3O",
   "categoria": "customer",
   "acepto": "acepto",
-  "imagen": "1677193266606_img.png"
+  "imagen": "1677207455329_img.png"
+ },
+ {
+  "id": 8,
+  "firstName": "Rachel",
+  "lastName": "Green",
+  "email": "rachelg@friends.com",
+  "password": "$2a$10$RpkTugaJGkYaDiZEpB8kkeWzEg6eZhQFWBI/Ce1087rzsw/j61uc2",
+  "categoria": "customer",
+  "acepto": "acepto",
+  "imagen": "1677207626735_img.png"
+ },
+ {
+  "id": 9,
+  "firstName": "Joey",
+  "lastName": "Tribbiani",
+  "email": "joetri@friends.com",
+  "password": "$2a$10$hfNxL7AJboMZLUtDsAd49uV/JYcNQdLnkERoVuMjozvtO5iCUQcia",
+  "categoria": "customer",
+  "acepto": "acepto",
+  "imagen": "1677207744023_img.png"
  }
 ]
