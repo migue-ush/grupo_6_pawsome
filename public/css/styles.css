@@ -490,9 +490,8 @@ main div.shopping-basket h1 i {
 }
 
 .mensaje-error {
-    text-align: left;
-    margin: 20px;
-    color: red;
+    Text-align: center;
+    color: #CC0000;
 }
 
 
