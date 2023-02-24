@@ -56,5 +56,15 @@
   "categoria": "customer",
   "acepto": "acepto",
   "imagen": "1677207744023_img.png"
+ },
+ {
+  "id": 10,
+  "firstName": "Ross",
+  "lastName": "Geller",
+  "email": "ross@friends.com",
+  "password": "$2a$10$pK5d2FHGGqxNmwOmY5kTTeiZp6PltJvFYHL7jm1z8RZ/6b47aPAA2",
+  "categoria": "admin",
+  "acepto": "acepto",
+  "imagen": "1677208700977_img.png"
  }
 ]
