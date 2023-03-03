@@ -60,11 +60,11 @@
  {
   "id": 10,
   "firstName": "Ross",
-  "lastName": "Geller",
+  "lastName": " Geller",
   "email": "ross@friends.com",
-  "password": "$2a$10$pK5d2FHGGqxNmwOmY5kTTeiZp6PltJvFYHL7jm1z8RZ/6b47aPAA2",
+  "password": "$2a$10$Ahca.FyM7O3hhdyeYqR2uuzNFTKgzFVAC8KdPuoW5cJWJH7yqpPGC",
   "categoria": "admin",
   "acepto": "acepto",
-  "imagen": "1677208700977_img.png"
+  "imagen": "1677808403504_img.png"
  }
 ]

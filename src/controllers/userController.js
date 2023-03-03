@@ -71,12 +71,17 @@ const controller = {
             }
         });
     },
-    
+
     profile: (req,res) => {
-        return res.redirect('users/userProfile', {
-            user: req.session.userLogged
-        });
+        return res.render('users/userProfile')
+    
     },
+    
+    // profile: (req,res) => {
+    //     return res.redirect('users/userProfile', {
+    //         user: req.session.userLogged
+    //     });
+    // },
 
     logout: (req, res) => {
         req.session.destroy();
