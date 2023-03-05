@@ -59,7 +59,7 @@ router.get('/login', usersController.login);
 // Procesar login
 router.post('/login', usersController.loginProcess);
 // Perfil de ususario
-router.get('/profile/:id', authMiddleware, usersController.profile);
+router.get('/profile', usersController.profile);
 // Logout
 router.get('/logout/', usersController.logout);
 
