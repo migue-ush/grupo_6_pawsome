@@ -253,6 +253,37 @@ article {
     flex-wrap: wrap;
 }
 
+.error-text {
+    font-family:'Roboto', sans-serif;
+    font-size:50px;
+    text-transform:uppercase;
+    padding:15px;
+    color:#7a6c5d;
+    font-weight:bolder;
+    text-align:center;
+}
+
+h3 {
+    font-family:'Roboto', sans-serif;
+    font-size:15px;
+    text-transform:uppercase;
+    padding:15px;
+    color:#c17c74;
+    font-weight:bolder;
+    text-align:center;
+    margin-top:-40px;
+}
+
+.error-img {
+    margin-top:25px;
+    display:flex;
+    justify-content: center;
+}
+
+.error-img img {
+    max-width:400px;
+}
+
 h1 {
     font-family:'Roboto', sans-serif;
     font-size:20px;
