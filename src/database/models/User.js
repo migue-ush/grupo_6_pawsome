@@ -1,4 +1,59 @@
-const fs = require('fs')
+module.exports = (sequelize, dataTypes) => {
+    let alias = 'User';
+
+    let cols = {
+        id: {
+            type: dataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        created_at: {
+            type: dataTypes.DATE
+        },
+        updated_at: {
+            type: dataTypes.DATE
+        },
+        deleted_at: {
+            type: dataTypes.DATE
+        },
+        firstName: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        lastName: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        email: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        password: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        id_role: {
+            type: dataTypes.INTEGER,
+            foreignKey: true,
+        }
+    };
+
+    let config = {
+        tableName: 'users',
+        timestamps: true,
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+        deletedAt: false
+    }
+
+    const User = sequelize.define(alias, cols, config);
+
+    return User
+
+};
+
+
+/* const fs = require('fs')
 
 const User = {
     fileName: './src/data/users.json',
@@ -51,4 +106,4 @@ const User = {
     }
 }
 
-module.exports = User;
+module.exports = User; */
