@@ -19,9 +19,9 @@ app.use(methodOverride('_method'));
 
 // ERROR 404
 
-app.use((req,res,next) => {
-    res.status(404).render('not-found')
-});
+// app.use((req,res,next) => {
+//     res.status(404).render('not-found')
+// });
 
 // Templates Engine
 app.set('views', path.join(__dirname, 'views'));
