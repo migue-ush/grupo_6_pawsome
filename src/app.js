@@ -17,11 +17,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(methodOverride('_method'));
 
-// ERROR 404
-
-// app.use((req,res,next) => {
-//     res.status(404).render('not-found')
-// });
 
 // Templates Engine
 app.set('views', path.join(__dirname, 'views'));
@@ -36,6 +31,11 @@ app.use('/products', productRoutes)
 
 const userRoutes = require('./routes/userRoutes');
 app.use('/users', userRoutes)
+
+// Error 404 
+app.use((req,res,next) => {
+    res.status(404).render('not-found')
+ });
 
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
