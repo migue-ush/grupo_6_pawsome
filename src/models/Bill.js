@@ -17,7 +17,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.DATE
         },
         date: {
-            type: dataTypes.DATE,
+            type: dataTypes.DATEONLY,
             allowNull: false
         },
         total: {
@@ -25,7 +25,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         expiry: {
-            type: dataTypes.DATE,
+            type: dataTypes.DATEONLY,
             allowNull: false
         },
         id_user: {
