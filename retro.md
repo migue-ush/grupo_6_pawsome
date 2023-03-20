@@ -1,9 +1,9 @@
-### Conclusiones del Primer Sprint 
+### Conclusiones del Segundo Sprint 
 
 + En cuanto a lo que hicimos bien en el sprint anterior, cuando logramos coincidir en un horario para trabajar juntos en el proyecto pudimos avanzar y compartir ideas, como tambien ayudarnos los unos a los otros cuando surgian problemas o dudas. 
 + En cuanto a lo que hicimos mal, en varias ocasiones faltó comunicación entre nosotros: tanto como para dividirnos las tareas, como para cuando la intención e juntarnos en grupo y avanzar sobre el proyecto.  
 
-### Conclusiones del Segundo Sprint 
+### Conclusiones del Tercer Sprint 
 
 + Start Doing: Comenzamos a trabajar en las cosas que eran prioridad, dejando los "opcionales" para el final. Y de esta manera no perder tiempo y lograr llegar de mejor manera al día de la entrega.
 
@@ -15,7 +15,7 @@
 
 + Stop Doing: Quedarnos con dudas e incertidumbres a lo largo del Sprint sin hacer la consulta oportuna entre nosotros o bien con los docentes, creyendo que en algún momento se nos va a aclarar u ocurrir una solución. Ganar tiempo haciendo la consulta inmediatamente sin miedo a molestar, sería mucho más práctico en los próximos Sprints.
 
-### Conclusiones del Tercer Sprint 
+### Conclusiones del Cuarto Sprint 
 
 + Start Doing: Trabajar más seguido en el proyecto, llegar con más tiempo a la fecha de entrega para poder tener unos días de descanso entre Sprints. 
 
@@ -30,7 +30,7 @@ y horario para juntarnos y discutir cada Sprint.
 + Stop Doing: Llegamos al Sprint con varias dudas e incertidumbres de como lograr algunas de las tareas que forman parte de las entregas obligatorias. Estas dudas pueden ser
 aclaradas con alguno de los docentes, pero al llegar con el tiempo justo a la fecha de entrega del Sprint, ya nos ha pasado que dejamos alguna tarea para completarla más adelante, y de esta forma nos vamos atrasando. 
 
-### Conclusiones del Cuarto Sprint 
+### Conclusiones del Quinto Sprint 
 
 + Start Doing: Comenzamos a comunicarnos al terminar lo que cada uno debía ocuparse para ver si podíamos cooperar con lo que iba a hacer algún compañero. De esa manera pudimos ir regulando esfuerzos y poner el foco en las cosas que más lo requerían.
 Dejamos de dar vueltas con temas que nos complicaban, para verlos juntos en algún encuentro grupal y en el momento continuar con otros temas, para no demorarnos y no estancarnos en el progreso.
@@ -42,6 +42,18 @@ Dejamos de dar vueltas con temas que nos complicaban, para verlos juntos en alg�
 + Less of: Insistir con temas complejos o que nos demandan mucho tiempo por no sacarlos en el momento, para no demorar el resto de las tareas.
 
 + Stop Doing: Quedarnos con dudas hasta la última semana, y confiar en que en poco tiempo se podría resolver. No dejar las dudas para el final, sino tratar de sacarnos esas dudas al principio para poder trabajar más tranquilos luego.
+
+### Conclusiones del Sexto Sprint 
+
++ Start Doing: Llegar con todos los entregables que son obligatorios para cada Sprint, y luego con el tiempo que sobra concentrarnos en los opcionales y/o terminar alguna tarea que nos haya quedado pendiente de Sprints anteriores. 
+
++ More of: Juntarnos a trabajar en grupo si es conveniente para alguna tarea, sacarnos las dudas con los profes y pedir ayuda si es que la necesitamos.
+
++ Keep Doing: Continuar a trabajar en conjunto en el proyecto cuando sea posible. En el caso particular de este Sprint, nos sirvió trabajar juntos en las primeras tareas ya que era dificil repartirnos los temas.
+
++ Less of: Terminar las tareas obligatorias muy cerca de la fecha de entrega, nos quedamos sin tiempo para volver a las opcionales y poder entregar un proyecto más completo para cada Sprint. 
+
++ Stop Doing: No sacarnos las dudas, llegar con el tiempo justo a entregar.
 
 
 
