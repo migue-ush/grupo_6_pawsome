@@ -8,7 +8,7 @@ const sequelize = db.sequelize;
 
 
 const productController = {
-    create: (req, res) => {
+    add: (req, res) => {
          db.Category.findAll()
          .then(function(categorias){
             return res.render ("products/create", {categorias:categorias})
@@ -16,7 +16,7 @@ const productController = {
         
     },
     
-    processCreate: async (req, res) => {
+    create: async (req, res) => {
             try {
                 const newProduct = await db.Product.create({
                     ...req.body
@@ -69,10 +69,25 @@ const productController = {
     },
         
 
-    delete: (req, res) => {
-        let productFiltrados = products.filter(product => product.id != req.params.id);
-        fs.writeFileSync(productsJSON, JSON.stringify(productFiltrados, null, 2))
-        return res.render("products/productList", {products: productFiltrados})
+    delete: async (req, res) => {
+        try {
+            const producto = await db.Product.findByPk(req.params.id)
+            res.render('/products/productDelete', {Product: producto})
+        }
+
+        catch (e) {
+            console.log(e)
+        }
+    },
+
+    destroy: async (req, res) => {
+        try{
+            const producto = await db.Product.destroy({where: {id:req.params.id}})
+            res.send(producto)
+        }
+        catch (e) {
+            console.log(e)
+        }
     }
 
 };
