@@ -25,7 +25,7 @@ El E-Commerce creado, apunta a captar como clientes a personas de todas las edad
 
 + Carolina Vicino: 25 años de edad, hasta hace menos de un año vivía en Buenos Aires, hasta que decidí mudarme a Montreal. Estudio Programación Web Full Stack, y me gustan los juegos en línea, aprender idiomas, entrenar y viajar.
 
-+ Boris Boujon: 22 años de edad, vivo en Buenos Aires, estudio programacion web full stack, trabajo en contabilidad, me gusta entrenar, viajar y conocer nuevos lugares.
++ Federico Simón: Vivo en Monte Grande, tengo 34 años trabajo en el Servicio Penitenciario Federal en el area de Redes. Cuento con conocimientos previos en el area de programacion, y muchas horas de autodidacta. Mi meta principal es adquirir mucha experiencia en el area de desarrollo para poder algun dia lanzarme como freelance y poder viajar. Me encanta maratonear mirando series.
 
 ### Wireframes y Tablero
 
