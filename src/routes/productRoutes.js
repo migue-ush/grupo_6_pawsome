@@ -17,7 +17,7 @@ const uploadFile = multer({storage: multerDiskStorage});
 
 const productController = require('../controllers/productController');
 
-router.get('/', productController.list);
+router.get('/productList', productController.list);
 
 router.get('/productDetail/:id', productController.display);
 

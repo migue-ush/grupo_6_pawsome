@@ -6,14 +6,15 @@
         <h2>Detalle de producto</h2>
         <section>
             <article>
-                <img class="producto" src="/img/<%= product.imagen %>" alt="imagen del producto">
-                    <h2 class="titulo"><%= product.nombre %></p>
-                        <p class="desc"><%= product.descripcion %></p>
-                        <p class="categoria"><%= product.categoria %></p>
-                        <p class="precio"><label>$  </label><%= product.precio %></p>
+                <img class="producto" src="/img/<%= product.image %>" alt="imagen del producto">
+                    <h2 class="titulo"><%= product.name %></p>
+                        <p class="desc"><%= product.description %></p>
+                        <p class="categoria"><%= product.id_category %></p>
+                        <p class="precio"><label>$  </label><%= product.price %></p>
             </article>
         </section>
         <form action="/products/delete/<%= product.id %>?_method=delete" method="POST">
+            
             <button type="submit" class="borrar">Borrar</button>
         </form>
     <%- include('../partials/footer.ejs') %>

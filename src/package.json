@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.15.0",
+    "fs": "^0.0.1-security",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.29.3",
+    "sequelize-cli": "^6.6.0"
+  },
+  "name": "grupo_6_pawsome",
+  "description": "Proyecto de E-Commerce dedicado a la venta online de productos para perros y gatos. Alimentos balanceados y todo tipo de artículos destinados al cuidado de mascotas.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carovicino/grupo_6_pawsome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carovicino/grupo_6_pawsome/issues"
+  },
+  "homepage": "https://github.com/carovicino/grupo_6_pawsome#readme"
+}
