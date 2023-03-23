@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+        <h2>Detalle de producto</h2>
+        <section>
+            <article>
+                <img class="producto" src="/img/<%= product.image %>" alt="imagen del producto">
+                    <h2 class="titulo"><%= product.name %></p>
+                        <p class="desc"><%= product.description %></p>
+                        <p class="categoria"><%= product.id_category %></p>
+                        <p class="precio"><label>$  </label><%= product.price %></p>
+            </article>
+        </section>
+        <form action="/products/delete/<%= product.id %>?_method=delete" method="POST">    
+            <button type="submit" class="borrar">Eliminar</button>
+        </form>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>
