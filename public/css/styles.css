@@ -525,6 +525,9 @@ main div.shopping-basket h1 i {
     color: #CC0000;
 }
 
+.no-valid {
+    border: 1px solid #CC0000;
+}
 
 /* FOOTER */
 
