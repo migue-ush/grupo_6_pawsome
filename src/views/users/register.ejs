@@ -32,7 +32,7 @@
                 </div>
             <% } %>
             <input type="password" class="dato <%= locals.errors && errors.password ? 'no-valid' : null %>" 
-            name="password" id="password" placeholder="CONTRASEÑA *" value="<%= locals.oldData ? oldData.password : null%>" require>
+            name="password" id="password" placeholder="CONTRASEÑA *" require>
             <% if (locals.errors && errors.password) { %>
                 <div class="mensaje-error">
                     <%= errors.password.msg %>
