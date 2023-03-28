@@ -59,8 +59,8 @@ module.exports = (sequelize, dataTypes) => {
 
 };
 
-
-/* const fs = require('fs')
+/*
+const fs = require('fs')
 
 const User = {
     fileName: './src/data/users.json',
