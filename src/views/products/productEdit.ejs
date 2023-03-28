@@ -6,31 +6,35 @@
 <main>
     <h2>Edición de producto</h2>
     <div class="create-form">
-    <form action="/products/productEdit/<%= product.id %>?_method=put" method="POST" enctype="multipart/form-data">
+    <form action="/products/productEdit/<%= Product.id %>?_method=put" method="POST" enctype="multipart/form-data">
         <fieldset>
             <label for="product-image" class="label-style">Imagen del producto</label>
-            <input value="<%= product.imagen %>" class="create-form-input" name="imagen" type="file" id="product-image">
+            <input value="<%= Product.image %>" class="create-form-input" name="imagen" type="file" id="product-image">
         </fieldset>
         <fieldset>
             <label for="product-name" class="label-style">Nombre del producto</label>
-            <input value="<%= product.nombre %>" class="create-form-input" name="nombre" type="text" id="product-name">
+            <input value="<%= Product.name %>" class="create-form-input" name="nombre" type="text" id="product-name">
         </fieldset>
         <fieldset>
             <label for="product-description" class="label-style">Descripcion del producto</label>
-            <input value="<%= product.descripcion %>" class="create-form-input" name="descripcion" type="text" id="product-description">
+            <input value="<%= Product.description %>" class="create-form-input" name="descripcion" type="text" id="product-description">
+        </fieldset>
+        
+        <fieldset>
+            <label for="product-price" class="label-style">Precio del producto</label>
+            <input value="<%= Product.price %>" class="create-form-input" name="precio" type="number" id="product-price">
         </fieldset>
         <fieldset>
             <label for="product-category" class="label-style">Categoría del producto</label>
-            <select class="create-form-input" name="categoria" id="product-category">
-                <option <% if (product.categoria == 1) { %> <%= 'selected' %> <% } %> value="1">Perros</option>
-                <option <% if (product.categoria == 2) { %> <%= 'selected' %> <% } %> value="2">Gatos</option>
-                <option <% if (product.categoria == 3) { %> <%= 'selected' %> <% } %> value="3">Ambos</option>
+            <select class="create-form-input" name="id_category" id="product-category">
+                <% for (let i=0; i< categoria.length; i++){ %>
+                    <option value="<%=categorias[i].id%>">
+                        <%=categorias[i].name%>
+                    </option>
+                    <% }%> 
             </select>
         </fieldset>
-        <fieldset>
-            <label for="product-price" class="label-style">Precio del producto</label>
-            <input value="<%= product.precio %>" class="create-form-input" name="precio" type="number" id="product-price">
-        </fieldset>
+
         <button type="submit" class="create-button">EDITAR</button>
     </form>
 </div>

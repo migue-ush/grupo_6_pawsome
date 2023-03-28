@@ -43,14 +43,14 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: true,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-        deletedAt: false
+        deletedAt: 'deleted_at'
     }
 
     const Product = sequelize.define(alias, cols, config);
 
     Product.associate = (models) => {
         Product.belongsTo(models.Category, {
-            as: 'category',
+            as: 'categorias',
             foreignKey: 'id_category'
         })
     }
