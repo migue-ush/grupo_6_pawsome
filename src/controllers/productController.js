@@ -1,4 +1,5 @@
 const db = require('../database/models');//agregar los modelos de la db
+const Product = require('../database/models/Product');
 const sequelize = db.sequelize;
 
 //const path = require('path')
@@ -44,17 +45,18 @@ const productController = {
     },
 
     display: (req, res) => {
-        /*let product = products.find(row => row.id == req.params.id);
-        if (product) return res.render("products/productDetail", {product: product});
-        else return res.send("No se encontró el producto");
-   */
         db.Product.findByPk(req.params.id)
             .then(product => {
                 res.render("products/productDetail", { product: product })
             })
     },
 
-    edit: async (req, res) => {//traer las categorias 
+     /*let product = products.find(row => row.id == req.params.id);
+        if (product) return res.render("products/productDetail", {product: product});
+        else return res.send("No se encontró el producto");
+   */
+
+    /*edit: async (req, res) => {//traer las categorias 
         try {
             const product = await db.Product.findByPk(req.params.id)
             res.render('productEdit', { Product: product })
@@ -62,13 +64,28 @@ const productController = {
         catch (e) {
             console.log(e)
         }
-    },
-
-   /*(req, res) => {
-        let product = products.find(row => row.id == req.params.id)
-        if (product) return res.render("products/productEdit", {product: product});
-        else return res.send("No se encontró el producto")
     },*/
+    /*edit: function(req,res) {
+        let productId = req.params.id;
+        let promProduct = db.Product.findByPk(productId,{include: ['categories']});
+        let promCategorias = db.Category.findAll();
+        
+        Promise.all([promProduct, promCategorias])
+        .then(([Product]) => {
+            return res.render('/products/productList', {Product})})
+        .catch(error => res.send(error))
+    },*/
+
+   edit: async (req, res) => {//traer las categorias 
+        try {
+            const product = await db.Product.findByPk(req.params.id, {include: ['categories']})
+            let promCategorias = db.Category.findAll();
+            res.render('products/productEdit', {Product: product})
+        }
+        catch (e) {
+            console.log(e)
+        }
+    },
 
     update: (req, res) => {
         products.forEach(row => {
