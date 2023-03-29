@@ -9,12 +9,24 @@ const sequelize = db.sequelize;
 
 
 const productController = {
-    add: (req, res) => {
+   /* add: (req, res) => {
         db.Category.findAll()
             .then(function (categorias) {
-                return res.render("products/create", { categorias: categorias })
+                return res.render("products/create", { categorias: categorias})
             })
 
+    },*/
+
+    add: async(req, res)=>{
+        try {
+            const categorias = await db.Category.findAll()
+            const brand = await db.Brand.findAll()
+
+            return res.render("products/create", { categorias: categorias, brand: brand})
+            
+        } catch (e) {
+            console.log(e)
+        }
     },
 
     create: async (req, res) => {
@@ -25,7 +37,8 @@ const productController = {
                 name: req.body.name,
                 description: req.body.description,
                 price: req.body.price,
-                id_category: req.body.id_category//consultar como guardar
+                id_category: req.body.id_category,//consultar como guardar
+                id_brand: req.body.id_brand //
                 
             })
             res.render("products/productList")//ver el producto agregado en la lista

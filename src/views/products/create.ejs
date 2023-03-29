@@ -30,6 +30,15 @@
                                     <% }%> </select>
                         </fieldset>
                         <fieldset>
+                            <label for="product-brand" class="label-style">Marca del producto</label>
+                            <select class="create-form-input" name="id_brand" id="product-brand">
+                                <% for (let i=0; i< brand.length; i++){ %>
+                                    <option value="<%=brand[i].id%>">
+                                        <%=brand[i].name%>
+                                    </option>
+                                    <% }%> </select>
+                        </fieldset>
+                        <fieldset>
                             <label for="product-price" class="label-style">Precio del producto</label>
                             <input class="create-form-input" name="price" type="number" id="product-price">
                         </fieldset>
