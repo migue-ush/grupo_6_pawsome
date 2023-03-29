@@ -8,7 +8,7 @@ const multerValidator = require('../middlewares/multerMiddleware');
 const productController = require('../controllers/productController');
 
 router.get('/create', productController.add);
-router.post('/productList', authMiddleware, multerValidator.single("image"), productController.create);
+router.post('/create', multerValidator.single("image"), productController.create);
 
 router.get('/productList', productController.list);
 router.get('/productDetail/:id', productController.display);

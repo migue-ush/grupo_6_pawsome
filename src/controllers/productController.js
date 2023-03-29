@@ -79,8 +79,8 @@ const productController = {
    edit: async (req, res) => {//traer las categorias 
         try {
             const product = await db.Product.findByPk(req.params.id, {include: ['categories']})
-            let promCategorias = db.Category.findAll();
-            res.render('products/productEdit', {Product: product})
+            let promCategorias = await db.Category.findAll();
+            res.render('products/productEdit', {Product: product , categorias : promCategorias })
         }
         catch (e) {
             console.log(e)
