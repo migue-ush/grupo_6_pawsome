@@ -21,7 +21,7 @@ const productController = {
         try {
            const newProduct = await db.Product.create({
 
-                image: image.file.filename,
+                image: req.file.filename,
                 name: req.body.name,
                 description: req.body.description,
                 price: req.body.price,
