@@ -43,7 +43,7 @@ const productController = {
                 id_brand: req.body.id_brand //
             }
             )
-            res.redirect("<gitproductList")//ver el producto agregado en la lista
+            res.redirect("productList")//ver el producto agregado en la lista
         }
         catch (e) {
             console.log(e)
