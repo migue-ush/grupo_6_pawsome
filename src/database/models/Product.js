@@ -35,6 +35,10 @@ module.exports = (sequelize, dataTypes) => {
         id_category: {
             type: dataTypes.INTEGER,
             foreignKey: true,
+        },
+        id_brand:{
+            type: dataTypes.INTEGER,
+            foreignKey: true,
         }
     };
 
@@ -54,7 +58,13 @@ module.exports = (sequelize, dataTypes) => {
             foreignKey: 'id_category'
         })
     }
-
+    Product.associate = (models) => {
+        Product.belongsTo(models.Brand, {
+            as: 'brands',
+            foreignKey: 'id_brand'
+        })
+    }
+    
     return Product
 
 };

@@ -22,7 +22,7 @@ const productController = {
             const categorias = await db.Category.findAll()
             const brand = await db.Brand.findAll()
 
-            return res.render("products/create", { categorias: categorias, brand: brand})
+            return res.render("products/create", {categorias: categorias, brand: brand})
             
         } catch (e) {
             console.log(e)
@@ -31,7 +31,9 @@ const productController = {
 
     create: async (req, res) => {
         try {
-           const newProduct = await db.Product.create({
+        
+           const newProduct = await db.Product.create(
+            {
 
                 image: req.file.filename,
                 name: req.body.name,
@@ -39,9 +41,9 @@ const productController = {
                 price: req.body.price,
                 id_category: req.body.id_category,//consultar como guardar
                 id_brand: req.body.id_brand //
-                
-            })
-            res.render("products/productList")//ver el producto agregado en la lista
+            }
+            )
+            res.redirect("<gitproductList")//ver el producto agregado en la lista
         }
         catch (e) {
             console.log(e)
