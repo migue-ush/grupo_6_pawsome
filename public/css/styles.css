@@ -98,6 +98,56 @@ header img {
     margin-right:auto;
 }
 
+.menu button  {
+    padding: 0;
+    border: none;
+    background:none;
+    color:#fff;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    width:40px;
+    cursor:pointer;
+}
+
+.cerrar-menu {
+    display:block;
+    border:0;
+    font-size:1.25rem;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+.nav {
+    opacity:0;
+    visibility:hidden;
+
+    position:fixed;
+    z-index:9;
+    display:flex;
+    flex-direction:column;
+    align-items:end;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color:#595959;
+    padding:2rem;
+    color:white;
+
+}
+
+.nav.visible {
+    opacity:1;
+    visibility:visible;
+}
+
+.nav-list {
+    display:flex;
+    flex-direction: column;
+}
+
 .user {
     padding:20px;
     height:60px;
@@ -453,6 +503,14 @@ h2 a {
     justify-content: center;
 }
 
+.enviar:hover {
+    background-color:#c0ae9a;
+    box-shadow: #A4A4A4;
+    transition-duration: 0.3s;
+}
+
+
+
 .borrar {
     text-transform:uppercase;
     background-color:#ddc9b4;
@@ -635,6 +693,11 @@ p {
 /* TABLET */
 
 @media (min-width: 420px){
+
+    .nav-menu {
+        opacity:0;
+        visibility:hidden;
+    }
 
 
     .searchbar {
