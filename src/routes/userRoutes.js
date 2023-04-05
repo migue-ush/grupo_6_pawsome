@@ -19,12 +19,12 @@ router.get('/register', guestMiddleware,usersController.register);
 // Procesar el registro
 router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 // Formulario login
-router.get('/login', usersController.login);
+// router.get('/login', usersController.login);
 // Procesar login
-router.post('/login', usersController.loginProcess);
+// router.post('/login', usersController.loginProcess);
 // Perfil de ususario
-router.get('/profile', usersController.profile);
+// router.get('/profile', usersController.profile);
 // Logout
-router.get('/logout/', usersController.logout);
+// router.get('/logout/', usersController.logout);
 
 module.exports = router;

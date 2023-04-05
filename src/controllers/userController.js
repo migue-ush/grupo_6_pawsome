@@ -10,6 +10,26 @@ const controller = {
     register: (req, res) => {
         return res.render('users/register');
     },
+
+    processRegister: async (req, res) => {
+        try {
+           const newUser = await db.User.create(
+            {
+                /*id: req.file.filename,
+                firstName: req.body.name,
+                lastName: req.body.description,
+                email: req.body.price,
+                password: req.body.id_category,//consultar como guardar
+                id_role: req.body.id_brand */
+            }
+            )
+            res.redirect('/users/login')
+        }
+        catch (e) {
+            console.log(e)
+        }
+
+    },
     
     // processRegister: (req, res) => {
     //     const resultValidation = validationResult(req);
