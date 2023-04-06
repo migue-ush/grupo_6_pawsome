@@ -118,6 +118,7 @@ header img {
     font-size:1.25rem;
     background-color:transparent;
     cursor:pointer;
+    margin-bottom:10px;
 }
 
 .nav {
@@ -132,7 +133,8 @@ header img {
     top:0;
     right:0;
     bottom:0;
-    background-color:#595959;
+    background-color:#2a3d45;
+    border-left:5px solid #c17c74;
     padding:2rem;
     color:white;
 
@@ -146,6 +148,15 @@ header img {
 .nav-list {
     display:flex;
     flex-direction: column;
+}
+
+
+.paws {
+    font-size:10px;
+}
+
+.paws i {
+    padding:5px;
 }
 
 .user {
