@@ -37,7 +37,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         id_role: {
-            type: dataTypes.INTEGER,
+            type: dataTypes.BOOLEAN,
             foreignKey: true,
         }
     };

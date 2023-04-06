@@ -15,12 +15,12 @@ const controller = {
         try {
            const newUser = await db.User.create(
             {
-                /*id: req.file.filename,
-                firstName: req.body.name,
-                lastName: req.body.description,
-                email: req.body.price,
-                password: req.body.id_category,//consultar como guardar
-                id_role: req.body.id_brand */
+                firstName: req.body.firstName,
+                lastName: req.body.lastName,
+                email: req.body.email,
+                password: req.body.password,
+                image: req.file.filename, //avatar
+                id_role: req.body.id_role
             }
             )
             res.redirect('/users/login')
