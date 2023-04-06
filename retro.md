@@ -55,5 +55,16 @@ Dejamos de dar vueltas con temas que nos complicaban, para verlos juntos en alg�
 
 + Stop Doing: No sacarnos las dudas, llegar con el tiempo justo a entregar.
 
+### Conclusiones del Septimo Sprint 
+
++ Start Doing: Llegar a tiempo con los entregables para cada Sprint y terminar aquellas tareas que nos quedaron pendientes de Sprints anteriores. 
+
++ More of: Animarnos a consultar en clase, sobre todo en las clases prácticas, si hay alguna consigna del Sprint que nos quedó pendiente y no pudimos sacar adelante solos, sobre todo para no atrasarnos con el resto de los entregables. 
+
++ Keep Doing: Continuar trabajando en equipo, consultarnos entre nosotros y/o a los profes cuando nos encontramos con alguna duda o algún problema que no sabemos resolver solos. 
++ Less of:
+
++ Stop Doing: Quedarnos con tareas pendientes de Sprints anteriores, que a veces pueden llegar a atrasarnos en el Sprint actual.
+
 
 
