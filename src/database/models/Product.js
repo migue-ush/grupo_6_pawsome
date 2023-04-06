@@ -32,10 +32,6 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(45),
             allowNull: false
         },
-        image: {
-            type: dataTypes.STRING,
-            allowNull: false
-        },
         id_category: {
             type: dataTypes.INTEGER,
             foreignKey: true,
