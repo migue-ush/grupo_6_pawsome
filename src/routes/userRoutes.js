@@ -9,6 +9,7 @@ const uploadFile = require('../middlewares/multerMiddleware')
 const validations = require('../middlewares/validateRegisterMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
+const userMidddleware = require('../middlewares/userMiddleware')//para usar en create
 
 
 // router.get('/', usersController.users);

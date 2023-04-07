@@ -31,15 +31,15 @@ const controller = {
 
     },
     
-    // processRegister: (req, res) => {
-    //     const resultValidation = validationResult(req);
+    /* processRegister: (req, res) => {
+        const resultValidation = validationResult(req);
 
-    //     if (resultValidation.errors.length > 0) {
-    //         return res.render('users/register', {
-    //             errors: resultValidation.mapped(),
-    //             oldData: req.body
-    //         });
-    //     }
+       if (resultValidation.errors.length > 0) {
+             return res.render('users/register', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            });
+         }*/
 
     //     let userInDB = User.findByField('email', req.body.email);
     //         if (userInDB){
