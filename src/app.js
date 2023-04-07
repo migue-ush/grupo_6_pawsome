@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const methodOverride =  require('method-override');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
-app.use(express.static('public'));
+app.use(express.static('../public'));
 app.use(session({
     secret: "It's a secret",
     resave: false,

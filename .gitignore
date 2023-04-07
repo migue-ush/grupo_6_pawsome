@@ -1,5 +1,5 @@
 /node_modules/
-config.js
+
 
 # Ignora archivos del sistema Mac 
 .DS_store
