@@ -7,7 +7,7 @@
         <h1><i class="fas fa-solid fa-paw"></i> Registrese aquí</h1>
         <h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>
         <div class="registro">
-        <form class="formulario" method="POST">
+        <form class="formulario" method="POST" id="loginForm">
             <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" require>
             <% if (locals.errors && errors.email) { %>
                 <div class="mensaje-error">

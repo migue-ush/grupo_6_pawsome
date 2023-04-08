@@ -9,7 +9,7 @@
        
          
         <div class="registro">
-        <form class="formulario" method="POST" action="/users/register" enctype="multipart/form-data">
+        <form class="formulario" id="registerForm" method="POST" action="/users/register" enctype="multipart/form-data">
             <input type="text" class="dato <%= locals.errors && errors.firstName ? 'no-valid' : null %>" 
             name="firstName" id="firstName" placeholder="NOMBRE *" value="<%= locals.oldData ? oldData.firstName : null%>" require>
             <% if (locals.errors && errors.firstName) { %>
