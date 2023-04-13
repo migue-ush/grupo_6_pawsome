@@ -1,5 +1,7 @@
 window.addEventListener("load", function() {
     let registerForm = document.querySelector("#registerForm");
+    let loginForm = document.querySelector("#loginForm");
+    let productForm = document.querySelector("#productForm")
 
     registerForm.addEventListener("submit", function(e) {
         e.preventDefault();
@@ -16,9 +18,7 @@ window.addEventListener("load", function() {
 
         if (firstName.value == "") {
             errors.push('Este campo no puede estar vacio.')
-        }
-
-        if (firstName.value.length < 2) {
+        } else if (firstName.value.length < 2) {
             errors.push('Este campo debe tener al menos 2 caracteres.')
         }
 
@@ -34,6 +34,8 @@ window.addEventListener("load", function() {
             errors.push('Este campo no puede estar vacio.')
         }
 
+   
+
         if (password.value == "") {
             errors.push('Este campo no puede estar vacio.')
         }
@@ -43,5 +45,46 @@ window.addEventListener("load", function() {
         }
 
 
-    })
+    });
+
+    loginForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let errors = [];
+
+        let email = document.querySelector("#email");
+
+        if (email.value == "") {
+            errors.push('Este campo no puede estar vacio.')
+        }
+        
+        let password = document.querySelector("#password");
+
+        if (password.value == "") {
+            errors.push('Este campo no puede estar vacio.')
+        }
+
+        if (password.value.length < 8) {
+            errors.push('Este campo debe tener al menos 8 caracteres.')
+        }
+    });
+
+    productForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let errors = [];
+
+        let nombreProducto = document.querySelector("#product-name");
+         if (nombreProducto.value = "") {
+            errors.push('Este campo no puede estar vacio.')
+         }
+
+        let descripcionProducto = document.querySelector("#product-description");
+        if (descripcionProducto.value = "") {
+            errors.push('Este campo no puede estar vacio.')
+        } else if (descripcionProducto.length < 20) {
+            errors.push('Este campo debe tener al menos 20 caracteres.')
+        }
+
+    });
 })
