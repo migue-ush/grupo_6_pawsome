@@ -64,9 +64,9 @@ const controller = {
     //     return res.redirect('/users/login');
     // },
 
-    // login: (req,res) => {
-    //     return res.render('users/login');
-    // },
+    login: (req,res) => {
+        return res.render('users/login');
+    },
 
     // loginProcess: (req,res) => {
     //     let userToLogin = User.findByField('email', req.body.email);

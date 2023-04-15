@@ -20,7 +20,7 @@ router.get('/register', guestMiddleware,usersController.register);
 // Procesar el registro
 router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 // Formulario login
-// router.get('/login', usersController.login);
+router.get('/login', usersController.login);
 // Procesar login
 // router.post('/login', usersController.loginProcess);
 // Perfil de ususario
