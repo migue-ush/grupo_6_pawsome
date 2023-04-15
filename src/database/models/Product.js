@@ -31,15 +31,8 @@ module.exports = (sequelize, dataTypes) => {
         price: {
             type: dataTypes.STRING(45),
             allowNull: false
-        },
-        id_category: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-        },
-        id_brand:{
-            type: dataTypes.INTEGER,
-            foreignKey: true,
         }
+        
     };
 
     let config = {
@@ -52,19 +45,17 @@ module.exports = (sequelize, dataTypes) => {
 
     const Product = sequelize.define(alias, cols, config);
 
-    Product.associate = (models) => {
+    Product.associate = function (models){
         Product.belongsTo(models.Category, {
             as: 'Category',
             foreignKey: 'id_category'
         })
-    }
-    Product.associate = (models) => {
         Product.belongsTo(models.Brand, {
             as: 'brands',
             foreignKey: 'id_brand'
         })
     }
-    
+        
     return Product
 
 };

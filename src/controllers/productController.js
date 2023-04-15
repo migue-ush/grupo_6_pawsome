@@ -60,7 +60,7 @@ const productController = {
     },
 
     display: (req, res) => {
-        db.Product.findByPk(req.params.id)
+        db.Product.findByPk(req.params.id, {include: [{association:'Category'}]})
             .then(product => {
                 res.render("products/productDetail", { product: product })
             })
@@ -95,7 +95,6 @@ const productController = {
         try {
             
             const product = await db.Product.findByPk(req.params.id,{include: [{association:'Category'}]})
-            console.log(product)
             let promCategorias = await db.Category.findAll();
             res.render('products/productEdit', {Product: product , categorias : promCategorias })
             
