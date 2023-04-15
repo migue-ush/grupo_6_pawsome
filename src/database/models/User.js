@@ -35,11 +35,11 @@ module.exports = (sequelize, dataTypes) => {
         image: {
             type: dataTypes.STRING,
             allowNull: false
-        },
+        }/*,
         id_role: {
             type: dataTypes.BOOLEAN,
             foreignKey: true,
-        }
+        }*/
     };
 
     let config = {

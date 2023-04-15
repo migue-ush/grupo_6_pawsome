@@ -11,14 +11,13 @@ window.addEventListener("load", function() {
         let lastName = document.querySelector("#lastName");
 
         let email = document.querySelector("#email");
+        const validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
         let password = document.querySelector("#password");
 
         if (firstName.value == "") {
             errors.push('Este campo no puede estar vacio.')
-        }
-
-        if (firstName.value.length < 2) {
+        } else if (firstName.value.length < 2) {
             errors.push('Este campo debe tener al menos 2 caracteres.')
         }
 
@@ -33,6 +32,11 @@ window.addEventListener("load", function() {
         if (email.value == "") {
             errors.push('Este campo no puede estar vacio.')
         }
+    
+        if (validEmail.test(email.value)) {  
+            } else {
+                errors.push('El email no es valido.')
+            }
 
         if (password.value == "") {
             errors.push('Este campo no puede estar vacio.')
@@ -43,5 +47,7 @@ window.addEventListener("load", function() {
         }
 
 
-    })
+    });
+
+
 })
