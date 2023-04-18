@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-    <%- include('../partials/head.ejs') %>
-<body>
-    <%- include('../partials/header.ejs') %>
-        <h2>Usuarios</h2>
-        <ul>
-            
-        </ul>
-        
-     
-    <%- include('../partials/footer.ejs') %>
-</body>
+<%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+            <h2>Usuarios</h2>
+            <ul>
+                <% for (let i=0; i < users.length; i++) { %>
+                    <li>
+                        <a class="user-l" href="/users/userProfile/<%= users[i].id %>">
+                            <%= users[i].lastName %>
+                                <%= users[i].firstName %>
+                        </a>
+                    </li>
+                    <% } %>
+            </ul>
+
+
+            <%- include('../partials/footer.ejs') %>
+    </body>
+
 </html>
-
-

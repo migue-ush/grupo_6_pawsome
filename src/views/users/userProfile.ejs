@@ -6,11 +6,14 @@
     <div class="container" styles="margin-top: 40px;">
         <div class="row">
             <div class="col-md-3">
-                <h2>Hola <%= user.firstName %> </h2>
-                <img src="/img/users/<%= user.avatar %> ">
+                <h2><%= user.firstName %> </h2>
+                <img src="/img/users/<%= user.image %> ">   
                 <br>
-                <br>
-                <div class="alert alert-success"><%= user.email %> </div>
+                <p>NOMBRE: <%= user.firstName %> </p>
+                <p>APELLIDO: <%= user.lastName %> </p>
+                <p>TIPO: <%= user.id_role %> </p>
+                <p>EMAIL: <%= user.email %> </p>
+                <div></div>
             </div>
         </div>
     </div>

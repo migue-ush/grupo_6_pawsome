@@ -31,7 +31,6 @@ const productController = {
 
     create: async (req, res) => {
         try {
-        
            const newProduct = await db.Product.create(
             {
 

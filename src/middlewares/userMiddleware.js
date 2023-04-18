@@ -21,3 +21,5 @@ const fileFilter = (req, file, cb) => {
 }
 
 const uploadFile = multer({fileFilter: fileFilter ,storage: multerDiskStorage})
+
+module.exports = uploadFile;

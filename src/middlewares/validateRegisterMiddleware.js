@@ -14,7 +14,7 @@ module.exports = [
         let acceptedExtensions = ['.jpg', '.png', '.gif'];
 
         if (!file) {
-            throw new Error('Tienes que subir una imagen');
+            throw new Error('Tienes que seleccionar una imagen');
         } else {
             let fileExtension = path.extname(file.originalname);
             if (!acceptedExtensions.includes(fileExtension)) {

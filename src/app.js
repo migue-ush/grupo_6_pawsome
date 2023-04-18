@@ -34,9 +34,10 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/users', userRoutes)
 
 // Error 404 
-app.use((req,res,next) => {
+/*app.use((req,res,next) => {
     res.status(404).render('not-found')
- });
+ });*/
+
 
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
