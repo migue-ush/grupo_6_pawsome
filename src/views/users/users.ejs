@@ -4,8 +4,8 @@
 
     <body>
         <%- include('../partials/header.ejs') %>
-            <h2>Usuarios</h2>
-            <ul>
+            <h2 class="user-header">Usuarios</h2>
+            <ul class="user-name">
                 <% for (let i=0; i < users.length; i++) { %>
                     <li>
                         <a class="user-l" href="/users/userProfile/<%= users[i].id %>">

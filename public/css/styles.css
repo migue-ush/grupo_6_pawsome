@@ -92,6 +92,42 @@ header img {
     margin-right:auto;
 }
 
+.user-header {
+    font-size:20px;
+    color:#c17c74;
+    font-weight:bold;
+    letter-spacing:1px;
+    left:auto;
+    right:auto;
+}
+
+.user-name {
+    text-align:center;
+    left:auto;
+    right:auto;
+    margin-left:-40px;
+}
+
+.user-name a {
+    color: #595959;
+}
+
+.user-image {
+    max-width:300px;
+    max-height:300px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-image img {
+    width:80%;
+}
+
+.user-data {
+    color: #2a3d45;
+    font-size:12px;
+}
+
 .menu {
     padding:20px;
     height:60px;

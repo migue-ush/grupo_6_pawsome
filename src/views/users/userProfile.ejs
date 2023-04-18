@@ -6,13 +6,13 @@
     <div class="container" styles="margin-top: 40px;">
         <div class="row">
             <div class="col-md-3">
-                <h2><%= user.firstName %> </h2>
-                <img src="/img/users/<%= user.image %> ">   
+                <div class="user-image"><img src="/img/users/<%= user.image %> "></div>  
+                <h2 class="user-header"><%= user.firstName %> </h2>
                 <br>
-                <p>NOMBRE: <%= user.firstName %> </p>
-                <p>APELLIDO: <%= user.lastName %> </p>
-                <p>TIPO: <%= user.id_role %> </p>
-                <p>EMAIL: <%= user.email %> </p>
+                <p><b class ="user-data">NOMBRE:</b> <%= user.firstName %> </p>
+                <p><b class ="user-data">APELLIDO:</b> <%= user.lastName %> </p>
+                <p><b class ="user-data">TIPO:</b> <%= user.id_role %> </p>
+                <p><b class ="user-data">EMAIL:</b> <%= user.email %> </p>
                 <div></div>
             </div>
         </div>
