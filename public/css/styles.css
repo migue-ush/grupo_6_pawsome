@@ -784,6 +784,28 @@ p {
 
 @media (min-width:770px){
 
+    .searchbar {
+        margin-top:-30px;
+        z-index:99;
+        position:relative;
+    }
+
+    #search {
+        border: 2px solid #eaeaea;
+        margin-top:-450px;
+        margin-bottom:500px;
+        width:450px;
+        display:flex;
+    }
+
+    .icon {
+        margin-top:-500px;
+        margin-bottom:500px;
+        left:240px;
+        flex-wrap: wrap;
+        color:#595959
+    }
+
     .header-images {
         width:100%;
     }
@@ -801,6 +823,8 @@ p {
         margin-top:-190px;
         z-index:1;
     }
+
+  
 
     .img-logo {
         border:5px solid #f6f6f6;
