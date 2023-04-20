@@ -142,13 +142,13 @@ const controller = {
 
     edit: async (req, res) => {
         try {
-            const user = await db.User.findByPk(req.params.id)
+            const user = await db.User.findByPk(req.params.id, { include: [{ association: "roles" }] })
             res.render('users/userEdit', { user: user })
         }
-    catch (e) {
-        console.log(e)
-    }
-        
+        catch (e) {
+            console.log(e)
+        }
+
     },
 
     update: async (req, res) => {
@@ -159,15 +159,30 @@ const controller = {
                 email: req.body.email,
                 password: bcryptjs.hashSync(req.body.password, 10),
                 image: req.file.filename, //avatar
-                id_role: req.body.id_role
-            }, {where: {id: req.params.id}})
+                /*id_role: req.body.id_role*/
+            }, { where: { id: req.params.id } })
             if (user == 0) throw new Error('Hubo un error al Actualizar')
-            res.render(('users/userProfile', { user: user }))
+            res.render(('users/users', { user: user }))
         }
-    catch (e) {
-        console.log(e)
-        res.send(e.message)
-    }
+        catch (e) {
+            console.log(e)
+            res.send(e.message)
+        }
+    },
+
+    delete: async (req, res) => {
+        try {
+            const user = await db.User.findByPk(req.params.id)
+            res.render('users/userDelete', { user })
+        }
+        catch (e) {
+            console.log(e)
+        }
+    },
+
+    destroy: async (req, res) => {
+        const user = await db.User.destroy({ where: { id: req.params.id } })
+        res.redirect('/users/users')
     }
 
     // profile: (req,res) => {

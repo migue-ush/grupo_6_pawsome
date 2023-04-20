@@ -27,8 +27,11 @@ router.get('/login', usersController.login);
 router.get('/users', usersController.profileList)
 router.get('/userProfile/:id', usersController.profile);
 //Edición de usuario
-router.get('/userEdit/:id', usersController.edit);
-router.get('/userUpdate/:id', usersController.update);
+router.get('/edit/:id', usersController.edit);
+router.post('/edit/:id', usersController.update);
+//Edición de usuario
+router.get('/delete/:id', usersController.delete);
+router.post('/delete/:id', usersController.destroy);
 // Logout
 // router.get('/logout/', usersController.logout);
 

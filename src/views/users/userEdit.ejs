@@ -7,7 +7,9 @@
         <h1><i class="fas fa-solid fa-paw"></i> Edición de usuario</h1>
         <!--<h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>-->
         <div class="registro">
-        <form class="formulario" id="registerForm" method="POST" action="/users/register" enctype="multipart/form-data">
+        <form class="formulario" id="registerForm" method="POST" action="/users/edit/<%= user.id %>" enctype="multipart/form-data">
+            <label for="product-image" class="label-style">IMAGEN DE PERFIL</label>
+            <img src="/img/users/<%= user.image %> ">
             <input type="text" class="dato <%= locals.errors && errors.firstName ? 'no-valid' : null %>" 
             name="firstName" id="firstName" placeholder="NOMBRE *" value="<%= user.firstName %>" require>
             <% if (locals.errors && errors.firstName) { %> 
@@ -62,8 +64,8 @@
                 </div>
             <% } %>
         <div class="aceptar">
-            <input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox" required>
-            <label for="acepto">Acepto aviso de privacidad. Terminos y condiciones *</label>
+            <!--<input type="checkbox" value="acepto" name="acepto" id="acepto" class="checkbox" required>
+            <label for="acepto">Acepto aviso de privacidad. Terminos y condiciones *</label>-->
         </div>
         <div class="submit">
             <button type="submit" class="enviar" id="button">Actualizar</button>

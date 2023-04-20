@@ -1,10 +1,14 @@
 module.exports = {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "",
+=======
+    "password": "root",
+>>>>>>> 4105959 (continuando con CRUD para usuarios)
     "database": "structure",
     "host": "127.0.0.1",
-    "port": "3306",
+    "port": "8889",
     "dialect": "mysql"
   },
   "test": {
