@@ -15,9 +15,13 @@
                 <p><b class ="user-data">EMAIL:</b> <%= user.email %> </p>
                 <div></div>
             </div>
-        </div>
-    </div>
-     
-    <%- include('../partials/footer.ejs') %>
-</body>
+            <section class="user-buttons">
+                <a class="button-prof" href="/users/edit/<%= user.id %>">Modificar</a>
+                <a class="button-prof" href="/users/delete/<%= user.id %>">Borrar</a>
+                <a class="button-prof" href="/users/users">Usuarios</a>
+            </section>
+
+            <%- include('../partials/footer.ejs') %>
+    </body>
+
 </html>
