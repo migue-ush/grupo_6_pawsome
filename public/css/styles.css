@@ -789,6 +789,12 @@ p {
 
     .nav-bar{
         background: #bcac9b;
+        position:relative;
+        bottom:880px;
+    }
+
+    .nav-bar a {
+        color:#fff;
     }
 
     main section {
@@ -928,6 +934,10 @@ p {
         display:flex;
         flex-wrap:wrap;
         justify-content: left;
+    }
+
+    main {
+        margin-top:-150px;
     }
 
 }
