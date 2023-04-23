@@ -4,8 +4,8 @@ const app = express();
 const path = require('path');
 const methodOverride =  require('method-override');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
-app.use(express.static('public')); //esto se cambia para fede nada mas
-//app.use(express.static('../public'));
+app.use(express.static('public'));
+
 app.use(session({
     secret: "It's a secret",
     resave: false,
@@ -33,6 +33,11 @@ app.use('/products', productRoutes)
 const userRoutes = require('./routes/userRoutes');
 app.use('/users', userRoutes)
 
+const productApiRoutes = require('./routes/productApiRoutes')
+app.use('/api/products', productApiRoutes)
+
+const userApiRoutes = require('./routes/userApiRoutes')
+app.use('/api/users', userApiRoutes)
 // Error 404 
 /*app.use((req,res,next) => {
     res.status(404).render('not-found')
