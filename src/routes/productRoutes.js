@@ -14,7 +14,7 @@ router.get('/productList', productController.list);
 router.get('/productDetail/:id', productController.display);
 
 router.get('/productEdit/:id', productController.edit);
-router.put('/productUpdate/:id', productController.update);
+router.post('/productEdit/:id', productController.update);
 
 router.get('/productDelete/:id', productController.delete);
 router.post('/productDelete/:id', productController.destroy)
