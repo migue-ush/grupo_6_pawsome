@@ -7,9 +7,10 @@
         <section>
             <article>
                 <img class="producto" src="/img/<%= product.image %>" alt="imagen del producto">
-                    <h2 class="titulo"><%= product.name %></p>
-                        <p class="desc"><%= product.description %></p>
-                        <p class="categoria"><%= product.Category.name %></p> 
+                    <h2 class="titulo">Producto: <%= product.name %></p>
+                        <p class="desc">Descripcion: <%= product.description %></p>
+                        <p class="categoria">Categoria: <%= product.Category.name %></p> 
+                        <p class="brand">Marca: <%= product.brands.name %></p> 
                         <p class="precio"><label>$  </label><%= product.price %></p>
             </article>
         </section>

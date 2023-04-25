@@ -38,19 +38,30 @@ const productController = {
     },
 
 
-    list: (req, res) => {
-        db.Product.findAll()
-            .then(products => {
-                return res.render("products/productList", { products: products });
-            })
+    list: async (req, res) => {
+        try{
+            const product = await db.Product.findAll({include: [{association: 'Category' },{ association: 'brands' }]})
+            
+            return res.render("products/productList", { product: product});
+            
+        }
+        catch (e) {
+            console.log(e)
+        }  
 
     },
 
-    display: (req, res) => {
-        db.Product.findByPk(req.params.id, {include: [{association:'Category'}]})
-            .then(product => {
-                res.render("products/productDetail", { product: product})
-            })
+    display: async (req, res) => {
+        try{
+            const product = await db.Product.findByPk(req.params.id, {include: [{association:'Category'}, {association:'brands'}]})
+            const promCategorias = await db.Category.findAll();
+            const brand = await db.Brand.findAll();
+            res.render("products/productDetail", { product: product, categorias: promCategorias, brand: brand})
+        }
+        catch (e) {
+            console.log(e)
+        }      
+      
     },
 
     edit: async (req, res) => {//traer las categorias 

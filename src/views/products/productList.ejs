@@ -7,20 +7,21 @@
         <h1>Listado de productos</h1>
         <h2>Nuestros Productos</h2>
         <ul id="products-list">
-            <% for(let i=0; i < products.length; i++) { %>
+            <% product.forEach(product => { %>
                 <li class="product-container">
                     <article>
-                        <a href="/products/productDetail/<%= products[i].id %>" class="detail">
-                            <img class="products-image" src="/img/<%= products[i].image %>" alt="imagen del producto">
+                        <a href="/products/productDetail/<%= product.id %>" class="detail">
+                            <img class="products-image" src="/img/<%= product.image %>" alt="imagen del producto">
                                 <div class="linea"></div>
-                                    <h2 class="titulo"><%= products[i].name %> </h2>
-                                        <p class="products-desc"><%= products[i].description %> </p>
-                                        <p class="categoria"><%= products[i].id_category %></p>
-                                        <p class="precio"><label>$ </label><%= products[i].price %></p>
+                                    <h2 class="titulo"><%= product.name %> </h2>
+                                        <p class="products-desc"><%= product.description %> </p>
+                                        <p class="categoria"><%= product.Category.name %></p>
+                                        <p class="categoria"><%= product.brands.name %></p>
+                                        <p class="precio"><label>$ </label><%= product.price %></p>
                         </a>
                     </article>
                 </li>
-            <% } %>
+            <% }) %>
         </ul>
     <button type="submit" class="create-button"><a href="/products/create">Crear producto</a></button>
     <%- include('../partials/footer.ejs') %>
