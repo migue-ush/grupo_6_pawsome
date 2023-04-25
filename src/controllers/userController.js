@@ -161,8 +161,9 @@ const controller = {
     // },
 
     profile: async (req, res) => {
-        const user = await db.User.findByPk(req.params.id)
-        return res.render('users/userProfile', { user: user })
+        const user = await db.User.findByPk(req.params.id, { include: [{ association: "role" }] })
+        const role = await db.Role.findAll()
+        return res.render('users/userProfile', { user, role })
 
     },
 

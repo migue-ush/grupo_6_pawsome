@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <%- include('../partials/head.ejs') %>
-<body>
-    <%- include('../partials/header.ejs') %>
-    <div class="container" styles="margin-top: 40px;">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="user-image"><img src="/img/users/<%= user.image %>"></div>  
-                <h2 class="user-header"><%= user.firstName %> </h2>
-                <br>
-                <p><b class ="user-data">NOMBRE:</b> <%= user.firstName %> </p>
-                <p><b class ="user-data">APELLIDO:</b> <%= user.lastName %> </p>
-                <p><b class ="user-data">TIPO:</b> <%= user.id_role %> </p>
-                <p><b class ="user-data">EMAIL:</b> <%= user.email %> </p>
-                <div></div>
-            </div>
-            <section class="user-buttons">
-                <a class="button-prof" href="/users/edit/<%= user.id %>">Modificar</a>
-                <a class="button-prof" href="/users/delete/<%= user.id %>">Borrar</a>
-                <a class="button-prof" href="/users/users">Usuarios</a>
-            </section>
 
-            <%- include('../partials/footer.ejs') %>
+    <body>
+        <%- include('../partials/header.ejs') %>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <div class="user-image"><img src="/img/users/<%= user.image %>"></div>
+                        <h2 class="user-header">
+                            <%= user.firstName %>
+                        </h2>
+                        <div class="data-container">
+                            <p class="user-data">NOMBRE: <%= user.firstName %></p>
+                            <p class="user-data">APELLIDO: <%= user.lastName %></p>
+                            <!-- <p class="user-data">TIPO: <%= user.role.name %></p> -->
+                            <p class="user-data">EMAIL: <%= user.email %></p>
+                        </div>
+                    </div>
+                    <section class="user-buttons">
+                        <a class="button-prof" href="/users/edit/<%= user.id %>">Modificar</a>
+                        <a class="button-prof" href="/users/delete/<%= user.id %>">Borrar</a>
+                        <a class="button-prof" href="/users/users">Usuarios</a>
+                    </section>
+
+                    <%- include('../partials/footer.ejs') %>
     </body>
 
 </html>
