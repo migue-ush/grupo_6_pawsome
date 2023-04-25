@@ -22,7 +22,7 @@ router.post('/register', uploadFile.single("avatar"), usersController.processReg
 // Formulario login
 router.get('/login', usersController.login);
 // Procesar login
-// router.post('/login', usersController.loginProcess);
+router.post('/login', usersController.loginProcess);
 // Perfil de ususario
 router.get('/users', usersController.profileList)
 router.get('/userProfile/:id', usersController.profile);

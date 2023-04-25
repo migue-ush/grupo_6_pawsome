@@ -21,6 +21,21 @@ const controller = {
                 oldData: req.body
             });
         }*/
+        const userInDB = await db.User.findOne({
+            where: {
+                email: req.body.email
+            }
+        });
+        if (userInDB) {
+            return res.render('users/register', {
+                errors: {
+                    email: {
+                        msg: 'Este email ya esá registrado'
+                    }
+                },
+                oldData: req.body
+            });
+        }
         try {
             const newUser = await db.User.create(
                 {
@@ -39,17 +54,7 @@ const controller = {
 
     },
 
-    //     let userInDB = User.findByField('email', req.body.email);
-    //         if (userInDB){
-    //             return res.render('users/register', {
-    //                 errors: {
-    //                     email: {
-    //                         msg: 'Este email ya esá registrado'
-    //                     }
-    //                 },
-    //                 oldData: req.body
-    //             });
-    //         }
+
 
     //     let userToCreate = {
     //         ...req.body,
@@ -107,8 +112,29 @@ const controller = {
         return res.render('users/login');
     },
 
-    // loginProcess: (req,res) => {
-    //     let userToLogin = User.findByField('email', req.body.email);
+    loginProcess: async (req, res) => {
+        let userToLogin = await db.User.findOne({
+            where: {
+                email: req.body.email
+            }
+        })
+        if (userToLogin) {
+            let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if (isOkPassword) {
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+                return console.log('/users/userProfile/' + req.params.id)
+            }
+            return res.render('users/login', {
+                errors: {
+                    email: {
+                        msg: 'No se encuentra este email en nuestra base de datos'
+                    }
+                }
+            });
+        }
+    },
+
 
     //     if(userToLogin) {
     //         let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
@@ -142,8 +168,9 @@ const controller = {
 
     edit: async (req, res) => {
         try {
-            const user = await db.User.findByPk(req.params.id, { include: [{ association: "roles" }] })
-            res.render('users/userEdit', { user: user })
+            const user = await db.User.findByPk(req.params.id, { include: [{ association: "role" }] })
+            const role = await db.Role.findAll()
+            res.render('users/userEdit', { user, role })
         }
         catch (e) {
             console.log(e)
@@ -153,16 +180,11 @@ const controller = {
 
     update: async (req, res) => {
         try {
-            const user = await db.User.update({
-                firstName: req.body.firstName,
-                lastName: req.body.lastName,
-                email: req.body.email,
-                password: bcryptjs.hashSync(req.body.password, 10),
-                image: req.file.filename, //avatar
-                /*id_role: req.body.id_role*/
-            }, { where: { id: req.params.id } })
-            if (user == 0) throw new Error('Hubo un error al Actualizar')
-            res.render(('users/users', { user: user }))
+            const user = await db.User.update({ ...req.body },
+                { where: { id: req.params.id } })
+            /*console.log(user)
+            if (user == 0) throw new Error('Hubo un error al Actualizar')*/
+            res.redirect('/users/userProfile/' + req.params.id)
         }
         catch (e) {
             console.log(e)

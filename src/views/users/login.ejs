@@ -8,7 +8,8 @@
         <h2>Para tener una mejor experiencia y beneficios exclusivos para ti y para tu mascota.</h2>
         <div class="registro">
         <form class="formulario" method="POST" id="loginForm">
-            <input type="email" class="dato" name="email" id="email" placeholder="CORREO ELECTRONICO *" require>
+            <input type="email" class="dato <%= locals.errors && errors.email ? 'no-valid' : null %>"
+            name="email" id="email" placeholder="CORREO ELECTRONICO *" value="<%= locals.oldData ? oldData.email : null%>" require>
             <% if (locals.errors && errors.email) { %>
                 <div class="mensaje-error">
                     <%= errors.email.msg %>
