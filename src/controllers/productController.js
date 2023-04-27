@@ -85,15 +85,24 @@ const productController = {
                 price: req.body.price,
                 id_category: req.body.id_category,
                 id_brand: req.body.id_brand
-            },{
+                
+            },  
+            {
                 where:{
                     id: req.params.id
                 }
             });
-            res.redirect('/products/productList/');
-        } catch (e) {
-            console.error(e);
+            const updatedProduct = await db.Product.findOne({
+                where: {
+                    id: req.params.id
+                }
+            });
+            console.log("Registro actualizado:", updatedProduct);
     
+            res.redirect('/products/productList/');
+
+        } catch (e) {
+            console.log(e);
         }
     },
 
