@@ -79,7 +79,9 @@ const productController = {
 
     update: async (req, res) => {
         try {
-            await db.Product.update({   
+            console.log(req.body)
+            console.log(req.params)
+            const edit = await db.Product.update({   
                 name: req.body.name,
                 description: req.body.description,
                 price: req.body.price,
@@ -92,12 +94,7 @@ const productController = {
                     id: req.params.id
                 }
             });
-            const updatedProduct = await db.Product.findOne({
-                where: {
-                    id: req.params.id
-                }
-            });
-            console.log("Registro actualizado:", updatedProduct);
+            console.log("Esto es", edit)
     
             res.redirect('/products/productList/');
 

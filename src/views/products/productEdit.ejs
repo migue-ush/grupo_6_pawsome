@@ -6,23 +6,23 @@
 <main>
     <h2>Edición de producto</h2>
     <div class="create-form">
-    <form method="POST" action="/products/productEdit/<%=Product.id%>"  enctype="multipart/form-data">
+    <form method="POST" action="/products/productEdit/<%=Product.id%>">
         <fieldset>
             <label for="product-image" class="label-style">Imagen del producto</label>
             <input value="<%= Product.image %>" class="create-form-input" name="imagen" type="file" id="product-image">
         </fieldset>
         <fieldset>
             <label for="product-name" class="label-style">Nombre del producto</label>
-            <input value="<%= Product.name %>" class="create-form-input" name="nombre" type="text" id="product-name">
+            <input value="<%= Product.name %>" class="create-form-input" name="name" type="text" id="product-name">
         </fieldset>
         <fieldset>
             <label for="product-description" class="label-style">Descripcion del producto</label>
-            <input value="<%= Product.description %>" class="create-form-input" name="descripcion" type="text" id="product-description">
+            <input value="<%= Product.description %>" class="create-form-input" name="description" type="text" id="product-description">
         </fieldset>
         
         <fieldset>
             <label for="product-price" class="label-style">Precio del producto</label>
-            <input value="<%= Product.price %>" class="create-form-input" name="precio" type="number" id="product-price">
+            <input value="<%= Product.price %>" class="create-form-input" name="price" type="number" id="product-price">
         </fieldset>
         <fieldset>
             <label for="product-category" class="label-style">Categoría del producto</label>
