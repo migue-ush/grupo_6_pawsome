@@ -6,7 +6,7 @@
 <main>
     <h2>Edición de producto</h2>
     <div class="create-form">
-    <form action="/products/productEdit/<%=Product.id%>" method="POST" enctype="multipart/form-data">
+    <form method="POST" action="/products/productEdit/<%=Product.id%>"  enctype="multipart/form-data">
         <fieldset>
             <label for="product-image" class="label-style">Imagen del producto</label>
             <input value="<%= Product.image %>" class="create-form-input" name="imagen" type="file" id="product-image">
@@ -35,6 +35,21 @@
                     <%} else {%>
                         <option value="<%= categorias[i].id %>">
                             <%=categorias[i].name%>
+                    <% }%> 
+                    <% }%> 
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="product-marca" class="label-style">Marca</label>
+            <select class="create-form-input" name="id_brand" id="product-marca">
+                <% for (let i=0; i< brand.length; i++){ %>
+                    <% if(brand[i].id == Product.id_brand){ %>
+                    <option value="<%= brand[i].id %>" selected>
+                        <%=brand[i].name%>
+                    </option>
+                    <%} else {%>
+                        <option value="<%= brand[i].id %>">
+                            <%=brand[i].name%>
                     <% }%> 
                     <% }%> 
             </select>

@@ -41,7 +41,6 @@ const productController = {
     list: async (req, res) => {
         try{
             const product = await db.Product.findAll({include: [{association: 'Category' },{ association: 'brands' }]})
-            
             return res.render("products/productList", { product: product});
             
         }
@@ -67,9 +66,10 @@ const productController = {
     edit: async (req, res) => {//traer las categorias 
         try {
             
-            const product = await db.Product.findByPk(req.params.id,{include: [{association:'Category'}]})
-            let promCategorias = await db.Category.findAll();
-            res.render('products/productEdit', {Product: product , categorias : promCategorias })
+            const product = await db.Product.findByPk(req.params.id,{include: [{association:'Category'}, {association:'brands'}]})
+            const promCategorias = await db.Category.findAll();
+            const brand = await db.Brand.findAll();
+            res.render('products/productEdit', {Product: product , categorias : promCategorias, brand: brand})
             
         }
         catch (e) {
@@ -77,21 +77,24 @@ const productController = {
         }
     },
 
-    update: (req, res) => {
-            db.Product.update({
-                //image: req.file.filename,
+    update: async (req, res) => {
+        try {
+            await db.Product.update({   
                 name: req.body.name,
                 description: req.body.description,
                 price: req.body.price,
-                id_category: req.body.id_category,//consultar como guardar
-                //id_brand: req.body.id_brand //
-
+                id_category: req.body.id_category,
+                id_brand: req.body.id_brand
             },{
                 where:{
                     id: req.params.id
                 }
             });
-            res.redirect('/products/productList')
+            res.redirect('/products/productList/');
+        } catch (e) {
+            console.error(e);
+    
+        }
     },
 
 
