@@ -79,8 +79,6 @@ const productController = {
 
     update: async (req, res) => {
         try {
-            console.log(req.body)
-            console.log(req.params)
             const edit = await db.Product.update({   
                 name: req.body.name,
                 description: req.body.description,
