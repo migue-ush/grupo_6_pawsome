@@ -29,9 +29,16 @@
                 <li><a href="/products/productList">Nuestros Productos</a></li>
             </ul>
             <ul>
+                
+                <li><a href="/productCart">Carrito</a></li>
+                <% if (locals.isLogged) { %>
+                    <li><!--<img src="/img/users/<%= locals.userLogged.image %>" width="140" style="border-radius: 100%;">-->
+                        <a href="/users/profile/">Hola <%= locals.userLogged.firstName %></a></li>
+                <li><a href="/users/logout"><i class="fas fa-sign-out-alt"></i>  Salir</a></li>
+                <%  }  else { %>
                 <li><a href="/users/register">Creá tu cuenta</a></li>
                 <li><a href="/users/login">Ingresá</a></li>
-                <li><a href="/productCart">Carrito</a></li>
+                <%  } %>
             </ul>
         </nav>
         <div class="header-images">

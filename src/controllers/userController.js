@@ -13,15 +13,16 @@ const controller = {
 
     processRegister: async (req, res) => {
 
-        /*const resultValidation = validationResult(req)
+        const resultValidation = validationResult(req)
 
         if (resultValidation.errors.length > 0) {
             return res.render('users/register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             });
-        }*/
-        const userInDB = await db.User.findOne({
+        }
+        try {
+            const userInDB = await db.User.findOne({
             where: {
                 email: req.body.email
             }
@@ -36,7 +37,7 @@ const controller = {
                 oldData: req.body
             });
         }
-        try {
+        
             const newUser = await db.User.create(
                 {
                     firstName: req.body.firstName,
@@ -109,10 +110,12 @@ const controller = {
 
 
     login: (req, res) => {
+        console.log(req.session);
         return res.render('users/login');
     },
 
     loginProcess: async (req, res) => {
+        try{
         let userToLogin = await db.User.findOne({
             where: {
                 email: req.body.email
@@ -123,8 +126,17 @@ const controller = {
             if (isOkPassword) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
-                return console.log('/users/userProfile/' + req.params.id)
+                /*console.log(req.params.id)*/
+                return res.redirect('/users/profile');
             }
+            return res.render('users/login', {
+                errors: {
+                    email: {
+                        msg: 'Las credenciales son inválidas'
+                    }
+                }
+            });
+        }
             return res.render('users/login', {
                 errors: {
                     email: {
@@ -132,9 +144,11 @@ const controller = {
                     }
                 }
             });
-        }
+        } catch (error) {
+            console.log(error);
+    }
     },
-
+    
 
     //     if(userToLogin) {
     //         let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
@@ -159,6 +173,12 @@ const controller = {
     //         }
     //     });
     // },
+    profileUser: (req, res) => {
+		return res.render('users/profile', {
+            user: req.session.userLogged
+			
+		});
+    },
 
     profile: async (req, res) => {
         const user = await db.User.findByPk(req.params.id, { include: [{ association: "role" }] })
@@ -206,7 +226,7 @@ const controller = {
     destroy: async (req, res) => {
         const user = await db.User.destroy({ where: { id: req.params.id } })
         res.redirect('/users/users')
-    }
+    },
 
     // profile: (req,res) => {
     //     return res.redirect('users/userProfile', {
@@ -214,10 +234,10 @@ const controller = {
     //     });
     // },
 
-    // logout: (req, res) => {
-    //     req.session.destroy();
-    //     return res.redirect('/');
-    // }
+    logout: (req, res) => {
+        req.session.destroy();
+        return res.redirect('/');
+    }
 };
 
 module.exports = controller;
