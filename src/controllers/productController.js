@@ -92,8 +92,7 @@ const productController = {
                     id: req.params.id
                 }
             });
-            console.log("Esto es", edit)
-    
+                
             res.redirect('/products/productList/');
 
         } catch (e) {
