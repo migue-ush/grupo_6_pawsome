@@ -1,5 +1,6 @@
 const express = require('express');
 const session = require('express-session');
+const cookies = require('cookie-parser');
 const app = express();
 const path = require('path');
 const methodOverride =  require('method-override');
@@ -12,6 +13,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
+
+app.use(cookies());
 
 app.use(userLoggedMiddleware);
 
@@ -46,6 +49,6 @@ app.use('/api/users', userApiRoutes)
  });*/
 
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT || 3001, function() {
     console.log("Servidor corriendo");
 });

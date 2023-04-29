@@ -54,21 +54,7 @@ const controller = {
         }
 
     },
-
-
-
-    //     let userToCreate = {
-    //         ...req.body,
-    //         password: bcryptjs.hashSync(req.body.password, 10),
-    //         imagen: req.file.filename
-    //     }
-
-    //     let userCreated = User.create(userToCreate);
-
-    //     return res.redirect('/users/login');
-    // },
-
-
+    
     profileList: async (req, res) => {
         const users = await db.User.findAll({
             order: [['lastName', 'ASC']]
@@ -103,11 +89,6 @@ const controller = {
     //         password: bcryptjs.hashSync(req.body.password, 10),
     //         imagen: req.file.filename
     //     }
-
-    //     let userCreated = User.create(userToCreate);
-
-    //     return res.redirect('/users/login');
-
 
     login: (req, res) => {
         console.log(req.session);
@@ -148,31 +129,7 @@ const controller = {
             console.log(error);
     }
     },
-    
 
-    //     if(userToLogin) {
-    //         let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-    //         if (isOkPassword) {
-    //             delete userToLogin.password;
-    //             req.session.userLogged = userToLogin;
-    //             return res.sender('profile/userProfile');
-    //         }
-    //         return res.render('users/login', {
-    //             errors: {
-    //                 email: {
-    //                     msg: 'Las credenciales son invalidas'
-    //                 }
-    //             }
-    //         });
-    //     }
-    //     return res.render('users/login', {
-    //         errors: {
-    //             email: {
-    //                 msg: 'No se encuentra este email en nuestra base de datos'
-    //             }
-    //         }
-    //     });
-    // },
     profileUser: (req, res) => {
 		return res.render('users/profile', {
             user: req.session.userLogged
@@ -227,12 +184,6 @@ const controller = {
         const user = await db.User.destroy({ where: { id: req.params.id } })
         res.redirect('/users/users')
     },
-
-    // profile: (req,res) => {
-    //     return res.redirect('users/userProfile', {
-    //         user: req.session.userLogged
-    //     });
-    // },
 
     logout: (req, res) => {
         req.session.destroy();
