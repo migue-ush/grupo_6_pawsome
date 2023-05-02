@@ -28,10 +28,10 @@ router.get('/users', usersController.profileList)
 router.get('/userProfile/:id', usersController.profile);
 router.get('/profile/', authMiddleware, usersController.profileUser);
 //Edición de usuario
-router.get('/edit/:id', usersController.edit);
+router.get('/edit/:id', authMiddleware, usersController.edit);
 router.post('/edit/:id', usersController.update);
 //Edición de usuario
-router.get('/delete/:id', usersController.delete);
+router.get('/delete/:id', authMiddleware, usersController.delete);
 router.post('/delete/:id', usersController.destroy);
 // Logout
 router.get('/logout/', usersController.logout);

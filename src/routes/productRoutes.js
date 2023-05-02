@@ -7,16 +7,16 @@ const multerValidator = require('../middlewares/multerMiddleware');
 
 const productController = require('../controllers/productController');
 
-router.get('/create', productController.add);
+router.get('/create', authMiddleware, productController.add);
 router.post('/create', multerValidator.single("image"), productController.create);
 
 router.get('/productList', productController.list);
 router.get('/productDetail/:id', productController.display);
 
-router.get('/productEdit/:id', productController.edit);
+router.get('/productEdit/:id', authMiddleware, productController.edit);
 router.post('/productEdit/:id', productController.update);
 
-router.get('/productDelete/:id', productController.delete);
+router.get('/productDelete/:id', authMiddleware, productController.delete);
 router.post('/productDelete/:id', productController.destroy)
 
 
