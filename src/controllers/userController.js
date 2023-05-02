@@ -4,7 +4,7 @@ const { validationResult } = require('express-validator');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 
-const User = require('../database/models/User');
+//const User = require('../database/models/User');
 
 const controller = {
     register: (req, res) => {
@@ -108,6 +108,9 @@ const controller = {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
                 /*console.log(req.params.id)*/
+                if(req.body.remember_user){
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+                }
                 return res.redirect('/users/profile');
             }
             return res.render('users/login', {
@@ -186,6 +189,7 @@ const controller = {
     },
 
     logout: (req, res) => {
+        res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/');
     }
