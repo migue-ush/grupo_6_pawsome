@@ -24,7 +24,7 @@ router.get('/login', guestMiddleware, usersController.login);
 // Procesar login
 router.post('/login', usersController.loginProcess);
 // Perfil de ususario
-router.get('/users', usersController.profileList)
+router.get('/users', authMiddleware, usersController.profileList)
 router.get('/userProfile/:id', usersController.profile);
 router.get('/profile/', authMiddleware, usersController.profileUser);
 //Edición de usuario

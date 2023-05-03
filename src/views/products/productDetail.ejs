@@ -15,9 +15,11 @@
             </article>
         </section>
         <section class="user-buttons">
+            <% if (locals.isLogged) { %>
             <a class="button-prof" href="/products/productEdit/<%= product.id %>">Editar</a>
             <a class="button-prof" href="/products/<%= product.id %>">Borrar</a>
             <a class="button-prof" href="/products/productList">Lista de Productos</a>
+            <% } %>
         </section>
         <!-- <form action="/products/delete/<%= product.id %>?_method=delete" method="POST"> -->
             <button type="submit" class="enviar">Agregar al carrito</button>

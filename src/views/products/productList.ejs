@@ -23,7 +23,10 @@
                 </li>
             <% }) %>
         </ul>
+        <% if (locals.isLogged) { %>
     <button type="submit" class="create-button"><a href="/products/create">Crear producto</a></button>
+    <% } %>
+</main>
     <%- include('../partials/footer.ejs') %>
 </body>
 </html>

@@ -23,13 +23,12 @@
         </div>
         </section>
         <nav class="nav-bar">
-            <ul>
+            <ul class="nav-bar-left">
                 <li><a href="#ofertas">Ofertas</a></li>
                 <li><a href="#mas-buscados">Más buscados</a></li>
                 <li><a href="/products/productList">Nuestros Productos</a></li>
             </ul>
-            <ul>
-                
+            <ul class="nav-bar-right">  
                 <li><a href="/productCart">Carrito</a></li>
                 <% if (locals.isLogged) { %>
                     <li><!--<img src="/img/users/<%= locals.userLogged.image %>" width="140" style="border-radius: 100%;">-->
@@ -45,10 +44,10 @@
             <a href="/"><img class="img-logo" src="/img/pawsome.png"></a>
             <div class="imgbox"><img class="fit" src="/img/headerimage.jpg"></div>
         </div>  
-    <form class="searchbar">
+    <!-- <form class="searchbar"> -->
     <input type="search" id="search" class="box" placeholder="Buscar un producto o artículos">
         <button type="submit" class="icon"><i class="fas fa-search"></i></button>
-    </form>
+    <!-- </form> -->
 
     <script src ="/js/main.js"></script>
 </header>
