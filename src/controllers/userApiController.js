@@ -33,7 +33,7 @@ module.exports = {
                     id: usuario.id,
                     name: usuario.firstName,
                     email: usuario.email,
-                    detail: '/api/users' + usuario.id
+                    detail: '/api/users/' + usuario.id
                 }
             })
             return res.json(response)  
