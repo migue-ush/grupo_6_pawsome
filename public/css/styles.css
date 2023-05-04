@@ -273,6 +273,7 @@ fieldset {
 
 .product-container article {
     width:550px;
+
 }
 
 .products-desc {
@@ -283,6 +284,7 @@ fieldset {
     margin-left:auto;
     margin-right:auto;
     color:#7a6c5d;
+    text-decoration: none;
 }
 
 .products-image {
