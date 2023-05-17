@@ -8,6 +8,7 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 app.use(express.static('public'));
 app.use
+app.use(cors())
 app.use(session({
     secret: "It's a secret",
     resave: false,
