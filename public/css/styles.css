@@ -346,6 +346,9 @@ article {
 .detail{
     text-decoration: none;
 }
+.detail-h{
+    text-decoration: none;
+}
 
 .producto {
     width:75vw;
@@ -863,6 +866,9 @@ p {
         border-radius:100%;
         width:65%;
         z-index:9;
+    }
+    .icon {
+        display: none;
     }
 
 }

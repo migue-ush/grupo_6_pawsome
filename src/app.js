@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const session = require('express-session');
 const cookies = require('cookie-parser');
 const app = express();
@@ -8,6 +9,7 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 app.use(express.static('public'));
 app.use
+app.use(cors())
 app.use(session({
     secret: "It's a secret",
     resave: false,
