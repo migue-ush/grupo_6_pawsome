@@ -6,7 +6,7 @@
         <h2>Detalle de producto</h2>
         <section>
             <article>
-                <img class="producto" src="/img/<%= product.image %>" alt="imagen del producto">
+                <img class="products-image" src="/img/<%= product.image %>" alt="imagen del producto">
                     <h2 class="titulo">Producto: <%= product.name %></p>
                         <p class="desc">Descripcion: <%= product.description %></p>
                         <p class="categoria">Categoria: <%= product.Category.name %></p> 
@@ -19,11 +19,12 @@
             <a class="button-prof" href="/products/productEdit/<%= product.id %>">Editar</a>
             <a class="button-prof" href="/products/<%= product.id %>">Borrar</a>
             <a class="button-prof" href="/products/productList">Lista de Productos</a>
-            <% } %>
+            <%  }  else { %>
         </section>
         <!-- <form action="/products/delete/<%= product.id %>?_method=delete" method="POST"> -->
             <button type="submit" class="enviar">Agregar al carrito</button>
         <!-- </form> -->
+        <% } %>
     <%- include('../partials/footer.ejs') %>
 </body>
 </html>

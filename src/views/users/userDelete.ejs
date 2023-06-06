@@ -9,7 +9,7 @@
         <div class="registro">
         <form class="formulario" id="registerForm" method="POST" action="/users/delete/<%= user.id %>" enctype="multipart/form-data">
             <label for="product-image" class="label-style">IMAGEN DE PERFIL</label>
-            <img src="/img/users/<%= user.image %> ">
+            <img class="user-image" src="/img/users/<%= user.image %> ">
             <input name="avatar" type="file" class="dato <%= locals.errors && errors.avatar ? 'no-valid' : null %>"
             id="product-image" value="<%= user.image %>">
             <% if (locals.errors && errors.avatar) { %>

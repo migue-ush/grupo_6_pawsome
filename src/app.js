@@ -46,9 +46,9 @@ app.use('/api/products', productApiRoutes)
 const userApiRoutes = require('./routes/userApiRoutes')
 app.use('/api/users', userApiRoutes)
 // Error 404 
-/*app.use((req,res,next) => {
+app.use((req,res,next) => {
     res.status(404).render('not-found')
- });*/
+ });
 
 
 app.listen(process.env.PORT || 3001, function() {

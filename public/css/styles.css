@@ -115,6 +115,9 @@ header img {
 .user-image {
     max-width:300px;
     max-height:300px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
     display: flex;
     justify-content: center;
 }
@@ -273,6 +276,7 @@ fieldset {
 
 .product-container article {
     width:550px;
+
 }
 
 .products-desc {
@@ -283,6 +287,7 @@ fieldset {
     margin-left:auto;
     margin-right:auto;
     color:#7a6c5d;
+    text-decoration: none;
 }
 
 .products-image {
@@ -339,6 +344,9 @@ article {
 }
 
 .detail{
+    text-decoration: none;
+}
+.detail-h{
     text-decoration: none;
 }
 
@@ -466,6 +474,7 @@ h4 {
 .data-container {
     padding-bottom: 10px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 /* REGISTER.HTML */
@@ -857,6 +866,9 @@ p {
         border-radius:100%;
         width:65%;
         z-index:9;
+    }
+    .icon {
+        display: none;
     }
 
 }
