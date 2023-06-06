@@ -4,8 +4,6 @@ const { validationResult } = require('express-validator');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 
-//const User = require('../database/models/User');
-
 const controller = {
     register: (req, res) => {
         return res.render('users/register');
